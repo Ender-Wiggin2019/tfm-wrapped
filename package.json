@@ -1,5 +1,5 @@
 {
-  "name": "git-wrapped",
+  "name": "tfm-wrapped",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@octokit/rest": "^21.0.2",
     "next": "13.5.7",
     "react": "^18",
-    "react-dom": "^18",
-    "react-json-view": "^1.21.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
