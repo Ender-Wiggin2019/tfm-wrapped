@@ -49,7 +49,7 @@ function OrbitingBody({ size, distance, duration, color }: {
   );
 }
 
-const buttonBaseClass = 'py-4 px-6 rounded-xl border-2 transition-all duration-300 font-display font-medium tracking-wide focus-visible:ring-2 focus-visible:ring-mars-rust/50 focus-visible:outline-none';
+const buttonBaseClass = 'py-3 px-5 rounded-xl border-2 transition-all duration-300 font-display font-medium text-sm tracking-wide focus-visible:ring-2 focus-visible:ring-mars-rust/50 focus-visible:outline-none';
 const buttonSelectedClass = 'border-mars-rust bg-mars-rust/20 text-mars-terracotta shadow-mars-glow/50';
 const buttonUnselectedClass = 'border-mars-rust/20 bg-mars-void/40 text-white/60 hover:border-mars-rust/40 hover:bg-mars-rust/10';
 
@@ -72,9 +72,9 @@ export default function Login({ onLogin, isLoading = false, error }: ILoginProps
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-mars-void p-4 overflow-hidden relative">
+    <div className="min-h-screen h-screen flex flex-col bg-mars-void overflow-x-hidden relative">
       {/* Mars Atmosphere Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-mars-void via-mars-abyss to-mars-rust/20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-mars-void via-mars-abyss to-mars-rust/20 pointer-events-none" />
 
       {/* Terraform Grid Overlay */}
       <div className="terraform-grid" />
@@ -86,7 +86,7 @@ export default function Login({ onLogin, isLoading = false, error }: ILoginProps
       <div className="mars-atmosphere" />
 
       {/* Animated Stars */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         {mounted && [...Array(80)].map((_, i) => (
           <div
             key={i}
@@ -125,9 +125,11 @@ export default function Login({ onLogin, isLoading = false, error }: ILoginProps
       </div>
 
       {/* Phobos/Deimos style moons */}
-      <div className="absolute top-20 right-20 w-4 h-4 bg-gradient-to-br from-gray-300 to-gray-500 rounded-full opacity-60 animate-float" />
-      <div className="absolute top-40 right-40 w-2 h-2 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full opacity-40 animate-float animation-delay-1000" />
+      <div className="absolute top-20 right-20 w-4 h-4 bg-gradient-to-br from-gray-300 to-gray-500 rounded-full opacity-60 animate-float pointer-events-none" />
+      <div className="absolute top-40 right-40 w-2 h-2 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full opacity-40 animate-float animation-delay-1000 pointer-events-none" />
 
+      {/* 可滚动内容区 */}
+      <div className="flex-1 min-h-0 overflow-y-auto flex items-center justify-center p-4">
       <div className={`relative w-full max-w-md z-10 transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         {/* Logo and Title */}
         <div className="text-center mb-10">
@@ -355,6 +357,7 @@ export default function Login({ onLogin, isLoading = false, error }: ILoginProps
             Ender 制作
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
