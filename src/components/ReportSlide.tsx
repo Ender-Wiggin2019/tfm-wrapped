@@ -5,6 +5,7 @@ import {
   getGamesEvaluation,
   getGenerationDistribution,
   formatNumber,
+  numberToChinese,
 } from '@/utils/dataUtils';
 import RadarChart, { calculateRadarData } from './RadarChart';
 
@@ -69,7 +70,7 @@ export default function ReportSlide({ config, report, isActive, scrollRef }: IRe
         ref={scrollRef}
         className="relative z-10 flex-1 min-h-0 overflow-y-auto overscroll-none hide-scrollbar"
       >
-        <div className="flex flex-col items-center min-h-full pt-16 pb-20 px-4 md:px-8 w-full max-w-4xl mx-auto justify-center">
+        <div className="flex flex-col items-center min-h-full pt-20 pb-24 px-4 md:px-8 w-full max-w-4xl mx-auto justify-center">
           {renderContent()}
         </div>
       </div>
@@ -552,7 +553,7 @@ function TitlesTemplate({
   if (rankings.total_games_top100) {
     titles.push({
       rank: rankings.total_games_top100,
-      name: `火星第${rankings.total_games_top100}常客`,
+      name: `火星第${numberToChinese(rankings.total_games_top100)}常客`,
       icon: '🔥',
       desc: `${stats.total_games} 局游戏`,
     });
@@ -561,7 +562,7 @@ function TitlesTemplate({
   if (rankings.win_rate_top100) {
     titles.push({
       rank: rankings.win_rate_top100,
-      name: `火星第${rankings.win_rate_top100}高手`,
+      name: `火星第${numberToChinese(rankings.win_rate_top100)}高手`,
       icon: '🏆',
       desc: `胜率 ${stats.win_rate.toFixed(1)}%`,
     });
@@ -570,7 +571,7 @@ function TitlesTemplate({
   if (rankings.total_cards_top100) {
     titles.push({
       rank: rankings.total_cards_top100,
-      name: `火星第${rankings.total_cards_top100}项目达人`,
+      name: `火星第${numberToChinese(rankings.total_cards_top100)}项目达人`,
       icon: '🃏',
       desc: `场均 ${stats.avg_cards_played.toFixed(1)} 张牌`,
     });
@@ -579,7 +580,7 @@ function TitlesTemplate({
   if (rankings.avg_position_top100) {
     titles.push({
       rank: rankings.avg_position_top100,
-      name: `火星第${rankings.avg_position_top100}改造先锋`,
+      name: `火星第${numberToChinese(rankings.avg_position_top100)}改造先锋`,
       icon: '🌍',
       desc: `平均第 ${stats.avg_position.toFixed(2)} 名`,
     });
@@ -588,7 +589,7 @@ function TitlesTemplate({
   if (rankings.shortest_generations_top100) {
     titles.push({
       rank: rankings.shortest_generations_top100,
-      name: `火星第${rankings.shortest_generations_top100}速通玩家`,
+      name: `火星第${numberToChinese(rankings.shortest_generations_top100)}速通玩家`,
       icon: '⚡',
       desc: `场均 ${stats.avg_generations.toFixed(1)} 代`,
     });
@@ -597,7 +598,7 @@ function TitlesTemplate({
   if (rankings.longest_generations_top100) {
     titles.push({
       rank: rankings.longest_generations_top100,
-      name: `火星第${rankings.longest_generations_top100}策略大师`,
+      name: `火星第${numberToChinese(rankings.longest_generations_top100)}策略大师`,
       icon: '🧠',
       desc: `场均 ${stats.avg_generations.toFixed(1)} 代`,
     });
@@ -606,7 +607,7 @@ function TitlesTemplate({
   if (rankings.trueskill_top200) {
     titles.push({
       rank: rankings.trueskill_top200,
-      name: `天梯第${rankings.trueskill_top200}强者`,
+      name: `天梯第${numberToChinese(rankings.trueskill_top200)}强者`,
       icon: '🏆',
       desc: '天梯模式认证高手',
     });
@@ -828,7 +829,7 @@ function EndingTemplate({
   userData: IUserData | null;
   report: IProcessedUserReport;
 }) {
-  const [shareStatus, setShareStatus] = useState<'idle' | 'copied' | 'shared'>('idle');
+  const [shareStatus, setShareStatus] = useState<'idle' | 'copied'>('idle');
 
   const stats = userData?.player_stats;
   const rankings = userData?.global_rankings;
@@ -837,19 +838,19 @@ function EndingTemplate({
   const getBestTitle = (): { rank: number; name: string } | null => {
     if (!rankings) return null;
     const titles: { rank: number; name: string }[] = [];
-    if (rankings.total_games_top100) titles.push({ rank: rankings.total_games_top100, name: `火星第${rankings.total_games_top100}常客` });
-    if (rankings.win_rate_top100) titles.push({ rank: rankings.win_rate_top100, name: `火星第${rankings.win_rate_top100}高手` });
-    if (rankings.total_cards_top100) titles.push({ rank: rankings.total_cards_top100, name: `火星第${rankings.total_cards_top100}项目达人` });
-    if (rankings.avg_position_top100) titles.push({ rank: rankings.avg_position_top100, name: `火星第${rankings.avg_position_top100}改造先锋` });
-    if (rankings.shortest_generations_top100) titles.push({ rank: rankings.shortest_generations_top100, name: `火星第${rankings.shortest_generations_top100}速通玩家` });
-    if (rankings.longest_generations_top100) titles.push({ rank: rankings.longest_generations_top100, name: `火星第${rankings.longest_generations_top100}策略大师` });
-    if (rankings.trueskill_top200) titles.push({ rank: rankings.trueskill_top200, name: `天梯第${rankings.trueskill_top200}强者` });
+    if (rankings.total_games_top100) titles.push({ rank: rankings.total_games_top100, name: `火星第${numberToChinese(rankings.total_games_top100)}常客` });
+    if (rankings.win_rate_top100) titles.push({ rank: rankings.win_rate_top100, name: `火星第${numberToChinese(rankings.win_rate_top100)}高手` });
+    if (rankings.total_cards_top100) titles.push({ rank: rankings.total_cards_top100, name: `火星第${numberToChinese(rankings.total_cards_top100)}项目达人` });
+    if (rankings.avg_position_top100) titles.push({ rank: rankings.avg_position_top100, name: `火星第${numberToChinese(rankings.avg_position_top100)}改造先锋` });
+    if (rankings.shortest_generations_top100) titles.push({ rank: rankings.shortest_generations_top100, name: `火星第${numberToChinese(rankings.shortest_generations_top100)}速通玩家` });
+    if (rankings.longest_generations_top100) titles.push({ rank: rankings.longest_generations_top100, name: `火星第${numberToChinese(rankings.longest_generations_top100)}策略大师` });
+    if (rankings.trueskill_top200) titles.push({ rank: rankings.trueskill_top200, name: `天梯第${numberToChinese(rankings.trueskill_top200)}强者` });
     return titles.length > 0 ? titles.reduce((prev, curr) => (curr.rank < prev.rank ? curr : prev)) : null;
   };
 
   const bestTitle = getBestTitle();
 
-  // 生成分享文本（仅主称号 + 局数）
+  // 生成分享文本（主称号 + 局数 + 网站引导）
   const generateShareText = () => {
     const username = report.username;
     let shareText = `🚀 我的2025殖民火星年度报告\n\n`;
@@ -861,36 +862,31 @@ function EndingTemplate({
     } else if (stats) {
       shareText += `📊 ${stats.total_games}局游戏\n`;
     }
-    shareText += `\nhttps://tfm.ender-wiggin.com\n`;
-
-    shareText += `\n#TerraformingMars #殖民火星 #年度报告`;
+    shareText += `\n👉 查看你的年度报告：https://tfm.ender-wiggin.com`;
+    shareText += `\n\n#TerraformingMars #殖民火星 #年度报告`;
     return shareText;
   };
 
-  // 分享功能
+  // 分享功能（直接复制到剪贴板）
   const handleShare = async () => {
     const shareText = generateShareText();
-
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: '我的殖民火星年度报告',
-          text: shareText,
-        });
-        setShareStatus('shared');
-        setTimeout(() => setShareStatus('idle'), 2000);
-        return;
-      } catch {
-        // 用户取消或不支持
-      }
-    }
 
     try {
       await navigator.clipboard.writeText(shareText);
       setShareStatus('copied');
-      setTimeout(() => setShareStatus('idle'), 2000);
+      setTimeout(() => setShareStatus('idle'), 3000);
     } catch {
-      alert(shareText);
+      // 部分浏览器不支持 clipboard API，fallback 用旧方法
+      const textarea = document.createElement('textarea');
+      textarea.value = shareText;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus('idle'), 3000);
     }
   };
 
@@ -919,23 +915,16 @@ function EndingTemplate({
           {shareStatus === 'idle' ? (
             <>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
               </svg>
-              分享我的火星成就
-            </>
-          ) : shareStatus === 'copied' ? (
-            <>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              已复制到剪贴板
+              复制分享文案
             </>
           ) : (
             <>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              分享成功
+              已复制，去粘贴分享吧！
             </>
           )}
         </button>

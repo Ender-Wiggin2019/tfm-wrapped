@@ -231,3 +231,53 @@ export function getGenerationDistribution(
     }))
     .sort((a, b) => a.generation - b.generation);
 }
+
+/**
+ * 将数字转换为中文数字（支持个位数到百位数）
+ * @param num 要转换的数字（1-999）
+ * @returns 中文数字字符串
+ *
+ * @example
+ * numberToChinese(1) => "一"
+ * numberToChinese(21) => "二十一"
+ * numberToChinese(100) => "一百"
+ * numberToChinese(101) => "101"
+ */
+export function numberToChinese(num: number): string {
+  if (num < 0 || num > 100) {
+    return String(num); // 超出范围直接返回原数字
+  }
+
+  const digits = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+  const units = ['', '十', '百'];
+
+  if (num === 0) return '零';
+  if (num < 10) return digits[num];
+  if (num === 10) return '十';
+  if (num < 20) return `十${digits[num % 10]}`;
+
+  let result = '';
+  const hundreds = Math.floor(num / 100);
+  const tens = Math.floor((num % 100) / 10);
+  const ones = num % 10;
+
+  // 百位
+  if (hundreds > 0) {
+    result += digits[hundreds] + units[2];
+  }
+
+  // 十位
+  if (tens > 0) {
+    result += digits[tens] + units[1];
+  } else if (hundreds > 0 && ones > 0) {
+    // 有百位但没有十位，且有个位，需要加"零"
+    result += '零';
+  }
+
+  // 个位
+  if (ones > 0) {
+    result += digits[ones];
+  }
+
+  return result;
+}
