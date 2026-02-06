@@ -95,59 +95,59 @@
         "rank": 2
       },
       {
+        "user_key": "xiakejuny",
+        "win_rate": 88.89,
+        "total_games": 9,
+        "total_wins": 8,
+        "rank": 3
+      },
+      {
+        "user_key": "yimingx",
+        "win_rate": 85.71,
+        "total_games": 7,
+        "total_wins": 6,
+        "rank": 4
+      },
+      {
         "user_key": "扭曲怪",
         "win_rate": 83.33,
         "total_games": 18,
         "total_wins": 15,
-        "rank": 3
+        "rank": 5
+      },
+      {
+        "user_key": "老谭",
+        "win_rate": 77.78,
+        "total_games": 9,
+        "total_wins": 7,
+        "rank": 6
+      },
+      {
+        "user_key": "jiang.cc",
+        "win_rate": 77.78,
+        "total_games": 9,
+        "total_wins": 7,
+        "rank": 7
       },
       {
         "user_key": "啦啦啦",
         "win_rate": 75.0,
         "total_games": 12,
         "total_wins": 9,
-        "rank": 4
+        "rank": 8
+      },
+      {
+        "user_key": "vikiy",
+        "win_rate": 75.0,
+        "total_games": 8,
+        "total_wins": 6,
+        "rank": 9
       },
       {
         "user_key": "crosshappy",
         "win_rate": 72.73,
         "total_games": 33,
         "total_wins": 24,
-        "rank": 5
-      },
-      {
-        "user_key": "wmsnow",
-        "win_rate": 70.0,
-        "total_games": 20,
-        "total_wins": 14,
-        "rank": 6
-      },
-      {
-        "user_key": "useful",
-        "win_rate": 70.0,
-        "total_games": 10,
-        "total_wins": 7,
-        "rank": 7
-      },
-      {
-        "user_key": "流星小傻瓜",
-        "win_rate": 69.23,
-        "total_games": 52,
-        "total_wins": 36,
-        "rank": 8
-      },
-      {
-        "user_key": "小z",
-        "win_rate": 68.18,
-        "total_games": 22,
-        "total_wins": 15,
-        "rank": 9
-      },
-      {
-        "user_key": "迎风布阵",
-        "win_rate": 64.29,
-        "total_games": 14,
-        "total_wins": 9,
         "rank": 10
       }
     ],
@@ -167,59 +167,59 @@
         "rank": 2
       },
       {
+        "user_key": "xiakejuny",
+        "avg_position": 1.111,
+        "total_games": 9,
+        "win_rate": 88.89,
+        "rank": 3
+      },
+      {
+        "user_key": "yimingx",
+        "avg_position": 1.143,
+        "total_games": 7,
+        "win_rate": 85.71,
+        "rank": 4
+      },
+      {
+        "user_key": "jiang.cc",
+        "avg_position": 1.222,
+        "total_games": 9,
+        "win_rate": 77.78,
+        "rank": 5
+      },
+      {
+        "user_key": "vikiy",
+        "avg_position": 1.25,
+        "total_games": 8,
+        "win_rate": 75.0,
+        "rank": 6
+      },
+      {
         "user_key": "扭曲怪",
         "avg_position": 1.278,
         "total_games": 18,
         "win_rate": 83.33,
-        "rank": 3
+        "rank": 7
+      },
+      {
+        "user_key": "fluorine999",
+        "avg_position": 1.286,
+        "total_games": 7,
+        "win_rate": 71.43,
+        "rank": 8
+      },
+      {
+        "user_key": "abandom",
+        "avg_position": 1.286,
+        "total_games": 7,
+        "win_rate": 71.43,
+        "rank": 9
       },
       {
         "user_key": "crosshappy",
         "avg_position": 1.333,
         "total_games": 33,
         "win_rate": 72.73,
-        "rank": 4
-      },
-      {
-        "user_key": "啦啦啦",
-        "avg_position": 1.333,
-        "total_games": 12,
-        "win_rate": 75.0,
-        "rank": 5
-      },
-      {
-        "user_key": "wmsnow",
-        "avg_position": 1.4,
-        "total_games": 20,
-        "win_rate": 70.0,
-        "rank": 6
-      },
-      {
-        "user_key": "useful",
-        "avg_position": 1.4,
-        "total_games": 10,
-        "win_rate": 70.0,
-        "rank": 7
-      },
-      {
-        "user_key": "流星小傻瓜",
-        "avg_position": 1.423,
-        "total_games": 52,
-        "win_rate": 69.23,
-        "rank": 8
-      },
-      {
-        "user_key": "小z",
-        "avg_position": 1.455,
-        "total_games": 22,
-        "win_rate": 68.18,
-        "rank": 9
-      },
-      {
-        "user_key": "jbhfpku",
-        "avg_position": 1.455,
-        "total_games": 11,
-        "win_rate": 63.64,
         "rank": 10
       }
     ],
@@ -297,145 +297,145 @@
     ],
     "shortest_generations_top10": [
       {
+        "user_key": "张颦颦",
+        "avg_generations": 5.78,
+        "total_games": 9,
+        "avg_score": 68.33,
+        "rank": 1
+      },
+      {
         "user_key": "tl",
         "avg_generations": 6.08,
         "total_games": 13,
         "avg_score": 82.62,
-        "rank": 1
+        "rank": 2
       },
       {
         "user_key": "fanhua",
         "avg_generations": 6.4,
         "total_games": 10,
         "avg_score": 74.2,
-        "rank": 2
+        "rank": 3
       },
       {
         "user_key": "wwh",
         "avg_generations": 6.65,
         "total_games": 23,
         "avg_score": 93.0,
-        "rank": 3
+        "rank": 4
       },
       {
         "user_key": "dolphin159",
         "avg_generations": 6.83,
         "total_games": 35,
         "avg_score": 100.06,
-        "rank": 4
+        "rank": 5
       },
       {
         "user_key": "永远",
         "avg_generations": 6.91,
         "total_games": 11,
         "avg_score": 103.27,
-        "rank": 5
+        "rank": 6
       },
       {
         "user_key": "aptx4869",
         "avg_generations": 6.91,
         "total_games": 11,
         "avg_score": 93.0,
-        "rank": 6
+        "rank": 7
       },
       {
         "user_key": "皮儿利",
         "avg_generations": 6.95,
         "total_games": 20,
         "avg_score": 101.05,
-        "rank": 7
+        "rank": 8
       },
       {
         "user_key": "fdpat04",
         "avg_generations": 7.0,
         "total_games": 11,
         "avg_score": 97.45,
-        "rank": 8
+        "rank": 9
       },
       {
         "user_key": "等七月の雪",
         "avg_generations": 7.09,
         "total_games": 11,
         "avg_score": 139.09,
-        "rank": 9
-      },
-      {
-        "user_key": "荒野侦探2666",
-        "avg_generations": 7.09,
-        "total_games": 11,
-        "avg_score": 97.45,
         "rank": 10
       }
     ],
     "longest_generations_top10": [
       {
+        "user_key": "子忠嘉合",
+        "avg_generations": 12.71,
+        "total_games": 7,
+        "avg_score": 112.43,
+        "rank": 1
+      },
+      {
         "user_key": "益达",
         "avg_generations": 12.48,
         "total_games": 27,
         "avg_score": 154.67,
-        "rank": 1
+        "rank": 2
+      },
+      {
+        "user_key": "北方提不起劲",
+        "avg_generations": 12.14,
+        "total_games": 7,
+        "avg_score": 81.0,
+        "rank": 3
       },
       {
         "user_key": "城南",
         "avg_generations": 11.85,
         "total_games": 13,
         "avg_score": 101.62,
-        "rank": 2
+        "rank": 4
+      },
+      {
+        "user_key": "深橙浅橙1102",
+        "avg_generations": 11.75,
+        "total_games": 8,
+        "avg_score": 104.5,
+        "rank": 5
+      },
+      {
+        "user_key": "yuy",
+        "avg_generations": 11.56,
+        "total_games": 9,
+        "avg_score": 112.56,
+        "rank": 6
       },
       {
         "user_key": "新几内亚的猴王",
         "avg_generations": 11.5,
         "total_games": 10,
         "avg_score": 104.1,
-        "rank": 3
+        "rank": 7
       },
       {
         "user_key": "归来",
         "avg_generations": 11.45,
         "total_games": 11,
         "avg_score": 110.0,
-        "rank": 4
-      },
-      {
-        "user_key": "一个里纳米的",
-        "avg_generations": 11.4,
-        "total_games": 10,
-        "avg_score": 100.6,
-        "rank": 5
-      },
-      {
-        "user_key": "maguawang",
-        "avg_generations": 11.29,
-        "total_games": 14,
-        "avg_score": 88.79,
-        "rank": 6
-      },
-      {
-        "user_key": "jzyqk",
-        "avg_generations": 11.0,
-        "total_games": 10,
-        "avg_score": 103.9,
-        "rank": 7
-      },
-      {
-        "user_key": "silainmaou",
-        "avg_generations": 11.0,
-        "total_games": 11,
-        "avg_score": 95.18,
         "rank": 8
       },
       {
-        "user_key": "a522645017",
-        "avg_generations": 10.84,
-        "total_games": 25,
-        "avg_score": 126.68,
+        "user_key": "sg12x",
+        "avg_generations": 11.44,
+        "total_games": 9,
+        "avg_score": 85.78,
         "rank": 9
       },
       {
-        "user_key": "牛逼轰轰的能量瓶小伙儿！",
-        "avg_generations": 10.8,
-        "total_games": 10,
-        "avg_score": 85.8,
+        "user_key": "fluorine999",
+        "avg_generations": 11.43,
+        "total_games": 7,
+        "avg_score": 109.57,
         "rank": 10
       }
     ],
@@ -508,78 +508,6 @@
         "max_score": 251,
         "total_games": 22,
         "avg_score": 117.27,
-        "rank": 10
-      }
-    ],
-    "trueskill_top10": [
-      {
-        "user_key": "dai半仙",
-        "trueskill": 26.3178,
-        "total_games": 6,
-        "win_rate": 16.67,
-        "rank": 1
-      },
-      {
-        "user_key": "useful",
-        "trueskill": 25.8884,
-        "total_games": 10,
-        "win_rate": 70.0,
-        "rank": 2
-      },
-      {
-        "user_key": "白金",
-        "trueskill": 25.6968,
-        "total_games": 3,
-        "win_rate": 66.67,
-        "rank": 3
-      },
-      {
-        "user_key": "funny",
-        "trueskill": 25.1312,
-        "total_games": 2,
-        "win_rate": 0.0,
-        "rank": 4
-      },
-      {
-        "user_key": "wmsnow",
-        "trueskill": 24.2303,
-        "total_games": 20,
-        "win_rate": 70.0,
-        "rank": 5
-      },
-      {
-        "user_key": "fanhua",
-        "trueskill": 23.8495,
-        "total_games": 10,
-        "win_rate": 30.0,
-        "rank": 6
-      },
-      {
-        "user_key": "等七月の雪",
-        "trueskill": 23.8041,
-        "total_games": 11,
-        "win_rate": 90.91,
-        "rank": 7
-      },
-      {
-        "user_key": "海贼王",
-        "trueskill": 23.6898,
-        "total_games": 10,
-        "win_rate": 30.0,
-        "rank": 8
-      },
-      {
-        "user_key": "不如原神",
-        "trueskill": 23.3853,
-        "total_games": 2,
-        "win_rate": 100.0,
-        "rank": 9
-      },
-      {
-        "user_key": "fishhhhh",
-        "trueskill": 23.0613,
-        "total_games": 4,
-        "win_rate": 25.0,
         "rank": 10
       }
     ]
@@ -664,8 +592,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mio": {
@@ -757,8 +684,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "愿仔wish": {
@@ -844,16 +770,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "woowoo": {
       "metadata": {
         "user_key": "woowoo",
         "input_names": [
-          "woowoo",
-          "WOOWOO"
+          "WOOWOO",
+          "woowoo"
         ],
         "user_ids": [
           "ef6915e9319e",
@@ -970,8 +895,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 2,
-        "trueskill_top10": null
+        "max_score_top10": 2
       }
     },
     "老谭": {
@@ -1077,13 +1001,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": null,
+        "win_rate_top10": 6,
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "流星小傻瓜": {
@@ -1489,13 +1412,12 @@
       },
       "global_rankings": {
         "total_games_top10": 10,
-        "win_rate_top10": 8,
-        "avg_position_top10": 8,
+        "win_rate_top10": null,
+        "avg_position_top10": null,
         "total_cards_top10": 7,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 4,
-        "trueskill_top10": null
+        "max_score_top10": 4
       }
     },
     "老王": {
@@ -1840,8 +1762,7 @@
         "total_cards_top10": 1,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "带恶人6324": {
@@ -1915,8 +1836,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "meow328": {
@@ -2315,8 +2235,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jjc": {
@@ -2595,8 +2514,7 @@
         "total_cards_top10": 5,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tl": {
@@ -2725,10 +2643,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 1,
+        "shortest_generations_top10": 2,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zhu791229": {
@@ -2887,8 +2804,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xiang.fan": {
@@ -2993,8 +2909,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "fenglin_18": {
@@ -3231,8 +3146,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "μ!": {
@@ -3312,8 +3226,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "90": {
@@ -3520,8 +3433,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "驱岩之力": {
@@ -3722,16 +3634,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lolierl": {
       "metadata": {
         "user_key": "lolierl",
         "input_names": [
-          "lolierl",
-          "Lolierl"
+          "Lolierl",
+          "lolierl"
         ],
         "user_ids": [
           "u297294d6dd6d",
@@ -3811,8 +3722,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "liu": {
@@ -4067,8 +3977,7 @@
         "total_cards_top10": 6,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "anvelbeta": {
@@ -4377,8 +4286,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "禁忌": {
@@ -4464,16 +4372,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sa": {
       "metadata": {
         "user_key": "sa",
         "input_names": [
-          "SA",
-          "sa"
+          "sa",
+          "SA"
         ],
         "user_ids": [
           "ue8dc5edc68d1",
@@ -4698,17 +4605,16 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yxsu": {
       "metadata": {
         "user_key": "yxsu",
         "input_names": [
+          "YXSu",
           "yxsu",
-          "YXsu",
-          "YXSu"
+          "YXsu"
         ],
         "user_ids": [
           "u52ab1f9264d4",
@@ -5066,8 +4972,7 @@
         "total_cards_top10": 4,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "小z": {
@@ -5260,13 +5165,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 9,
-        "avg_position_top10": 9,
+        "win_rate_top10": null,
+        "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 10,
-        "trueskill_top10": null
+        "max_score_top10": 10
       }
     },
     "vikiy": {
@@ -5378,21 +5282,20 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": null,
-        "avg_position_top10": null,
+        "win_rate_top10": 9,
+        "avg_position_top10": 6,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hikaru": {
       "metadata": {
         "user_key": "hikaru",
         "input_names": [
-          "Hikaru",
-          "hikaru"
+          "hikaru",
+          "Hikaru"
         ],
         "user_ids": [
           "cec0e3f37580",
@@ -5539,8 +5442,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "远野汉娜": {
@@ -5620,8 +5522,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 6,
-        "trueskill_top10": null
+        "max_score_top10": 6
       }
     },
     "useful": {
@@ -5721,21 +5622,20 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 7,
-        "avg_position_top10": 7,
+        "win_rate_top10": null,
+        "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 2
+        "max_score_top10": null
       }
     },
     "lidai": {
       "metadata": {
         "user_key": "lidai",
         "input_names": [
-          "LIDAI",
           "lidai",
+          "LIDAI",
           "Lidai"
         ],
         "user_ids": [
@@ -5902,8 +5802,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "田二": {
@@ -6020,8 +5919,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "海贼王": {
@@ -6113,8 +6011,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 8
+        "max_score_top10": null
       }
     },
     "dgxtony": {
@@ -6597,16 +6494,15 @@
         "total_cards_top10": 2,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hxy": {
       "metadata": {
         "user_key": "hxy",
         "input_names": [
-          "hxy",
-          "HXY"
+          "HXY",
+          "hxy"
         ],
         "user_ids": [
           "u5197689e1093",
@@ -6927,8 +6823,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "shippou225": {
@@ -7315,8 +7210,7 @@
         "total_cards_top10": 8,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "冬の花": {
@@ -7511,8 +7405,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hanmoyesang": {
@@ -7598,8 +7491,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "小渊": {
@@ -7926,8 +7818,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "荒野侦探2666": {
@@ -8024,10 +7915,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 10,
+        "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "东东": {
@@ -8162,8 +8052,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "地球弹射装置": {
@@ -8574,16 +8463,15 @@
         "total_cards_top10": 3,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "leyline": {
       "metadata": {
         "user_key": "leyline",
         "input_names": [
-          "leyline",
-          "Leyline"
+          "Leyline",
+          "leyline"
         ],
         "user_ids": [
           "uab33c1444ad1",
@@ -8670,8 +8558,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zhutoujie88": {
@@ -8854,16 +8741,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kano": {
       "metadata": {
         "user_key": "kano",
         "input_names": [
-          "Kano",
-          "kano"
+          "kano",
+          "Kano"
         ],
         "user_ids": [
           "u720dec6bbbc2",
@@ -9058,8 +8944,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "扭曲怪": {
@@ -9207,13 +9092,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 3,
-        "avg_position_top10": 3,
+        "win_rate_top10": 5,
+        "avg_position_top10": 7,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "crosshappy": {
@@ -9439,13 +9323,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 5,
-        "avg_position_top10": 4,
+        "win_rate_top10": 10,
+        "avg_position_top10": 10,
         "total_cards_top10": 10,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "听风聆雨": {
@@ -9586,8 +9469,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lingdang": {
@@ -9673,8 +9555,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "北风吹": {
@@ -9760,8 +9641,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kirtust": {
@@ -9908,8 +9788,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "等七月の雪": {
@@ -10018,10 +9897,9 @@
         "win_rate_top10": 2,
         "avg_position_top10": 2,
         "total_cards_top10": null,
-        "shortest_generations_top10": 9,
+        "shortest_generations_top10": 10,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 7
+        "max_score_top10": null
       }
     },
     "彩虹": {
@@ -10288,8 +10166,7 @@
         "total_cards_top10": 9,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "thlee0203": {
@@ -10377,8 +10254,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "re": {
@@ -10466,8 +10342,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "45": {
@@ -10566,8 +10441,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 5,
-        "trueskill_top10": null
+        "max_score_top10": 5
       }
     },
     "小冉": {
@@ -10665,8 +10539,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "桶装企鹅": {
@@ -10843,8 +10716,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "huasong": {
@@ -10852,13 +10724,13 @@
         "user_key": "huasong",
         "input_names": [
           "huasong",
-          "chs",
-          "Huasong"
+          "Huasong",
+          "chs"
         ],
         "user_ids": [
           "23d55973c44b",
-          "u7232c4bf67fe",
-          "23d55973c44b"
+          "23d55973c44b",
+          "u7232c4bf67fe"
         ],
         "not_found_names": [],
         "players_filter": 3,
@@ -10941,8 +10813,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wwh": {
@@ -11081,10 +10952,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 3,
+        "shortest_generations_top10": 4,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "fdpat04": {
@@ -11217,10 +11087,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 8,
+        "shortest_generations_top10": 9,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "104728036": {
@@ -11379,8 +11248,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dolphin159": {
@@ -11663,10 +11531,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 4,
+        "shortest_generations_top10": 5,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sjenka": {
@@ -11767,8 +11634,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "szh": {
@@ -11887,8 +11753,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "_xiaobai_yyds_": {
@@ -12035,8 +11900,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "双子": {
@@ -12141,8 +12005,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wmsnow": {
@@ -12286,21 +12149,20 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 6,
-        "avg_position_top10": 6,
+        "win_rate_top10": null,
+        "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 5
+        "max_score_top10": null
       }
     },
     "requiemia": {
       "metadata": {
         "user_key": "requiemia",
         "input_names": [
-          "requiemia",
-          "Requiemia"
+          "Requiemia",
+          "requiemia"
         ],
         "user_ids": [
           "9389aeb858c3",
@@ -12429,8 +12291,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "迎风布阵": {
@@ -12560,13 +12421,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 10,
+        "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 3,
-        "trueskill_top10": null
+        "max_score_top10": 3
       }
     },
     "zihan sun": {
@@ -12701,8 +12561,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "peach": {
@@ -12782,8 +12641,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "askera": {
@@ -12869,8 +12727,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "quda": {
@@ -12968,8 +12825,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zuididi": {
@@ -13134,8 +12990,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "rjw": {
@@ -13306,8 +13161,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "阿洋": {
@@ -13387,8 +13241,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tmbisheng": {
@@ -13607,8 +13460,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "muyu-a": {
@@ -13761,8 +13613,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "皮儿利": {
@@ -13877,10 +13728,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 7,
+        "shortest_generations_top10": 8,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "文远": {
@@ -13960,8 +13810,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "shorst": {
@@ -14120,8 +13969,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "益达": {
@@ -14303,9 +14151,8 @@
         "avg_position_top10": 1,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 1,
-        "max_score_top10": 7,
-        "trueskill_top10": null
+        "longest_generations_top10": 2,
+        "max_score_top10": 7
       }
     },
     "9death": {
@@ -14397,8 +14244,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "我是猫阀大人": {
@@ -14478,8 +14324,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ooc1997": {
@@ -14565,8 +14410,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "act5st": {
@@ -14671,8 +14515,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "156_20000000": {
@@ -14752,8 +14595,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 8,
-        "trueskill_top10": null
+        "max_score_top10": 8
       }
     },
     "调和师": {
@@ -14894,8 +14736,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wilhelm": {
@@ -14975,8 +14816,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "白银": {
@@ -15123,8 +14963,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "戦わなければ死ぬ": {
@@ -15210,8 +15049,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "制裁苏总的黄sir": {
@@ -15285,8 +15123,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "nep": {
@@ -15403,8 +15240,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "天天是好天": {
@@ -15490,8 +15326,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sun96": {
@@ -15584,8 +15419,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "葫芦娃": {
@@ -15671,8 +15505,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mkspencer233": {
@@ -15831,8 +15664,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "scatoladesu": {
@@ -15967,8 +15799,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "新几内亚的猴王": {
@@ -16090,9 +15921,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 3,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 7,
+        "max_score_top10": null
       }
     },
     "dddylan": {
@@ -16203,8 +16033,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xiaojiang": {
@@ -16321,8 +16150,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sailij": {
@@ -16420,8 +16248,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "鱼见": {
@@ -16507,8 +16334,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "啦啦啦": {
@@ -16662,13 +16488,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": 4,
-        "avg_position_top10": 5,
+        "win_rate_top10": 8,
+        "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "草鱼": {
@@ -16791,8 +16616,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "魏杨刚": {
@@ -16872,8 +16696,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "杉菜一汤": {
@@ -16972,8 +16795,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "esddse1": {
@@ -17072,8 +16894,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "小心小新小星": {
@@ -17153,8 +16974,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "a522645017": {
@@ -17300,9 +17120,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 9,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": null,
+        "max_score_top10": null
       }
     },
     "junne": {
@@ -17382,8 +17201,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "bamboozy": {
@@ -17463,8 +17281,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "小水先森": {
@@ -17550,8 +17367,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "红茶": {
@@ -17698,8 +17514,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "moe": {
@@ -17785,8 +17600,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "monk": {
@@ -17866,8 +17680,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ys": {
@@ -17947,8 +17760,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "汉堡包": {
@@ -18131,8 +17943,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "晚钟": {
@@ -18375,8 +18186,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "清风拂过": {
@@ -18456,8 +18266,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "maguawang": {
@@ -18579,9 +18388,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 6,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": null,
+        "max_score_top10": null
       }
     },
     "我就是我": {
@@ -18679,8 +18487,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "maya01": {
@@ -18773,8 +18580,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "狮哥": {
@@ -18860,8 +18666,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "星迹": {
@@ -18972,8 +18777,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "银氨溶液": {
@@ -19186,8 +18990,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "杨烁": {
@@ -19273,8 +19076,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "efhk": {
@@ -19373,8 +19175,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "night": {
@@ -19503,8 +19304,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "一个里纳米的": {
@@ -19595,9 +19395,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 5,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": null,
+        "max_score_top10": null
       }
     },
     "火星猫": {
@@ -19677,8 +19476,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "frank62214": {
@@ -19770,8 +19568,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "阴奉阳we": {
@@ -19882,8 +19679,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "karozz": {
@@ -19971,8 +19767,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jiang.cc": {
@@ -20084,13 +19879,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": null,
-        "avg_position_top10": null,
+        "win_rate_top10": 7,
+        "avg_position_top10": 5,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "1494164074": {
@@ -20194,8 +19988,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jz258": {
@@ -20306,8 +20099,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "chiyu001": {
@@ -20399,8 +20191,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "暗黑绿皮": {
@@ -20517,16 +20308,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kanon": {
       "metadata": {
         "user_key": "kanon",
         "input_names": [
-          "Kanon",
-          "kanon"
+          "kanon",
+          "Kanon"
         ],
         "user_ids": [
           "u4b6b6a4b3918",
@@ -20618,16 +20408,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "milky": {
       "metadata": {
         "user_key": "milky",
         "input_names": [
-          "milky",
-          "Milky"
+          "Milky",
+          "milky"
         ],
         "user_ids": [
           "ue4cef5f26147",
@@ -20732,8 +20521,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "艾蒙中法": {
@@ -20844,8 +20632,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "alex861504": {
@@ -20943,8 +20730,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zhulong233": {
@@ -21024,8 +20810,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xixo": {
@@ -21190,8 +20975,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "深橙浅橙1102": {
@@ -21276,9 +21060,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 5,
+        "max_score_top10": null
       }
     },
     "红烧珊瑚鱼": {
@@ -21370,8 +21153,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "langqiu": {
@@ -21469,8 +21251,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "达达": {
@@ -21569,8 +21350,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "npcxigua": {
@@ -21665,8 +21445,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yuy": {
@@ -21776,9 +21555,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 6,
+        "max_score_top10": null
       }
     },
     "arcticus": {
@@ -21871,8 +21649,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "青鸾qwq": {
@@ -21977,8 +21754,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "子忠嘉合": {
@@ -22075,9 +21851,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 1,
+        "max_score_top10": null
       }
     },
     "徒手开根号": {
@@ -22151,8 +21926,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "alpha7777": {
@@ -22238,8 +22012,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "oldfan": {
@@ -22319,8 +22092,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tian8848": {
@@ -22412,8 +22184,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "城南": {
@@ -22510,9 +22281,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 2,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 4,
+        "max_score_top10": null
       }
     },
     "ted": {
@@ -22520,8 +22290,8 @@
         "user_key": "ted",
         "input_names": [
           "TED",
-          "Ted",
-          "TEd"
+          "TEd",
+          "Ted"
         ],
         "user_ids": [
           "u31b9a1310953",
@@ -22645,8 +22415,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "osu": {
@@ -22763,8 +22532,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "狗头": {
@@ -22856,8 +22624,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xxx": {
@@ -22950,8 +22717,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xiakejuny": {
@@ -23051,13 +22817,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": null,
-        "avg_position_top10": null,
+        "win_rate_top10": 3,
+        "avg_position_top10": 3,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "akhaskj": {
@@ -23149,8 +22914,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 9,
-        "trueskill_top10": null
+        "max_score_top10": 9
       }
     },
     "永远": {
@@ -23246,10 +23010,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 5,
+        "shortest_generations_top10": 6,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dwdw": {
@@ -23335,8 +23098,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "星星": {
@@ -23441,16 +23203,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jbhfpku": {
       "metadata": {
         "user_key": "jbhfpku",
         "input_names": [
-          "Jbhfpku",
-          "jbhfpku"
+          "jbhfpku",
+          "Jbhfpku"
         ],
         "user_ids": [
           "u18b2dfeeb55e",
@@ -23599,12 +23360,11 @@
       "global_rankings": {
         "total_games_top10": null,
         "win_rate_top10": null,
-        "avg_position_top10": 10,
+        "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lizard009": {
@@ -23709,8 +23469,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "nydzsf": {
@@ -23796,8 +23555,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "joe": {
@@ -23938,8 +23696,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "皮尔嘶": {
@@ -24044,8 +23801,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "eleco": {
@@ -24186,8 +23942,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "真香": {
@@ -24322,8 +24077,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "一部分人": {
@@ -24409,8 +24163,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kingofweisuo": {
@@ -24496,8 +24249,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "my9281": {
@@ -24577,8 +24329,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "qzy": {
@@ -24658,8 +24409,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cyzwq567": {
@@ -24776,8 +24526,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "归来": {
@@ -24881,9 +24630,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 4,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 8,
+        "max_score_top10": null
       }
     },
     "左仙人江东": {
@@ -24963,8 +24711,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "min": {
@@ -25075,8 +24822,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "欧阳司机": {
@@ -25169,8 +24915,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "点子": {
@@ -25274,16 +25019,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dinnerv5": {
       "metadata": {
         "user_key": "dinnerv5",
         "input_names": [
-          "dinnerV5",
-          "dinnerv5"
+          "dinnerv5",
+          "dinnerV5"
         ],
         "user_ids": [
           "e3c453b1eb3a",
@@ -25363,8 +25107,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dddzzz": {
@@ -25458,8 +25201,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zhangcheng": {
@@ -25545,8 +25287,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "silainmaou": {
@@ -25674,9 +25415,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 8,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": null,
+        "max_score_top10": null
       }
     },
     "橘雪莉小爱": {
@@ -25762,8 +25502,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "北川": {
@@ -25868,8 +25607,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": 1,
-        "trueskill_top10": null
+        "max_score_top10": 1
       }
     },
     "dai半仙": {
@@ -25955,8 +25693,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 1
+        "max_score_top10": null
       }
     },
     "jzymz": {
@@ -26049,8 +25786,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "卧山看水": {
@@ -26130,8 +25866,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sahur": {
@@ -26205,8 +25940,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "群星": {
@@ -26298,8 +26032,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yuan": {
@@ -26379,8 +26112,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "fanhua": {
@@ -26472,10 +26204,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 2,
+        "shortest_generations_top10": 3,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 6
+        "max_score_top10": null
       }
     },
     "dogelas": {
@@ -26557,8 +26288,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zht": {
@@ -26657,8 +26387,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "absol96": {
@@ -26799,8 +26528,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "卓某": {
@@ -26886,8 +26614,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "aptx4869": {
@@ -27020,10 +26747,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": 6,
+        "shortest_generations_top10": 7,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mmm672345": {
@@ -27115,8 +26841,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "宇宇子是也": {
@@ -27208,8 +26933,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "saki": {
@@ -27350,8 +27074,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "茹梦": {
@@ -27443,8 +27166,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "艾斯瓜瓜": {
@@ -27549,8 +27271,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "東風谷草田": {
@@ -27630,8 +27351,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "越前龙马": {
@@ -27717,8 +27437,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "纯白knight": {
@@ -27816,8 +27535,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "x202310300": {
@@ -27940,8 +27658,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "无情的命运": {
@@ -28027,8 +27744,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "星海": {
@@ -28114,16 +27830,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "femme": {
       "metadata": {
         "user_key": "femme",
         "input_names": [
-          "femme",
-          "Femme"
+          "Femme",
+          "femme"
         ],
         "user_ids": [
           "uf470a1480c6f",
@@ -28221,16 +27936,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lipu": {
       "metadata": {
         "user_key": "lipu",
         "input_names": [
-          "lipu",
-          "LIPU"
+          "LIPU",
+          "lipu"
         ],
         "user_ids": [
           "u1b894f0abe44",
@@ -28304,16 +28018,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "isheach": {
       "metadata": {
         "user_key": "isheach",
         "input_names": [
-          "isheach",
-          "Isheach"
+          "Isheach",
+          "isheach"
         ],
         "user_ids": [
           "u8cb72268761e",
@@ -28387,8 +28100,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "anubis": {
@@ -28476,8 +28188,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "改哥": {
@@ -28582,8 +28293,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "secretlegk": {
@@ -28663,8 +28373,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "herbmaster": {
@@ -28757,8 +28466,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "牛逼轰轰的能量瓶小伙儿！": {
@@ -28861,9 +28569,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 10,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": null,
+        "max_score_top10": null
       }
     },
     "红领巾青蛙": {
@@ -28949,8 +28656,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wj": {
@@ -29024,8 +28730,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "little moster": {
@@ -29142,8 +28847,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "麦卡伦": {
@@ -29254,8 +28958,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ailin": {
@@ -29366,8 +29069,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yimingx": {
@@ -29485,13 +29187,12 @@
       },
       "global_rankings": {
         "total_games_top10": null,
-        "win_rate_top10": null,
-        "avg_position_top10": null,
+        "win_rate_top10": 4,
+        "avg_position_top10": 4,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "5-3": {
@@ -29583,8 +29284,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "liukiuna": {
@@ -29713,8 +29413,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "塞尔娅": {
@@ -29806,8 +29505,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "chuangf": {
@@ -29887,8 +29585,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "qxl": {
@@ -29896,8 +29593,8 @@
         "user_key": "qxl",
         "input_names": [
           "QXL",
-          "qxl",
-          "Qxl"
+          "Qxl",
+          "qxl"
         ],
         "user_ids": [
           "uc40f09c22475",
@@ -30009,8 +29706,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "兴王狂神": {
@@ -30096,8 +29792,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "惊鸿": {
@@ -30220,8 +29915,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "thewailing": {
@@ -30326,8 +30020,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jiebao666": {
@@ -30419,8 +30112,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "meguminqwq": {
@@ -30525,8 +30217,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tongtong": {
@@ -30625,8 +30316,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yog": {
@@ -30706,8 +30396,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "obama": {
@@ -30793,8 +30482,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wanghaozhe": {
@@ -30886,8 +30574,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xjh": {
@@ -30979,8 +30666,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "薇薇": {
@@ -31073,8 +30759,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "g_man": {
@@ -31082,8 +30767,8 @@
         "user_key": "g_man",
         "input_names": [
           "G_Man",
-          "G_MAN",
-          "g_man"
+          "g_man",
+          "G_MAN"
         ],
         "user_ids": [
           "ueecc01809fe7",
@@ -31164,8 +30849,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "溯望": {
@@ -31245,8 +30929,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "花卷": {
@@ -31339,8 +31022,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jiang01": {
@@ -31432,8 +31114,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "蜩翼": {
@@ -31532,8 +31213,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tonykouki": {
@@ -31619,8 +31299,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "irelend2332": {
@@ -31712,8 +31391,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "多喝橙汁": {
@@ -31805,8 +31483,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "透明": {
@@ -31905,8 +31582,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jzyqk": {
@@ -32028,9 +31704,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": 7,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": null,
+        "max_score_top10": null
       }
     },
     "一灯": {
@@ -32141,8 +31816,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "张颦颦": {
@@ -32245,10 +31919,9 @@
         "win_rate_top10": null,
         "avg_position_top10": null,
         "total_cards_top10": null,
-        "shortest_generations_top10": null,
+        "shortest_generations_top10": 1,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "g.km": {
@@ -32340,8 +32013,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "哈哥": {
@@ -32427,8 +32099,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "佳荣同学": {
@@ -32587,16 +32258,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "luu3na": {
       "metadata": {
         "user_key": "luu3na",
         "input_names": [
-          "luu3na",
-          "Luu3na"
+          "Luu3na",
+          "luu3na"
         ],
         "user_ids": [
           "u3407adb2d236",
@@ -32676,8 +32346,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sg12x": {
@@ -32770,9 +32439,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 9,
+        "max_score_top10": null
       }
     },
     "euphonium": {
@@ -32871,8 +32539,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "方方丸": {
@@ -32958,8 +32625,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "greymk": {
@@ -33051,8 +32717,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "fluorine999": {
@@ -33153,12 +32818,11 @@
       "global_rankings": {
         "total_games_top10": null,
         "win_rate_top10": null,
-        "avg_position_top10": null,
+        "avg_position_top10": 8,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 10,
+        "max_score_top10": null
       }
     },
     "anna831121": {
@@ -33244,8 +32908,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "白金火大": {
@@ -33331,8 +32994,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "有点怪z": {
@@ -33425,8 +33087,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "星落月3号机": {
@@ -33512,8 +33173,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ffz36": {
@@ -33599,8 +33259,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "麦克斯韦": {
@@ -33717,8 +33376,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dill1234": {
@@ -33810,8 +33468,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "szl271828": {
@@ -33916,8 +33573,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "眼鏡": {
@@ -34003,8 +33659,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "gman": {
@@ -34092,16 +33747,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "stanley": {
       "metadata": {
         "user_key": "stanley",
         "input_names": [
-          "stanley",
-          "Stanley"
+          "Stanley",
+          "stanley"
         ],
         "user_ids": [
           "fce7b3662ea0",
@@ -34187,8 +33841,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "derow": {
@@ -34299,8 +33952,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "facadecc": {
@@ -34380,8 +34032,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "pokerzzz": {
@@ -34467,8 +34118,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "l1lfool": {
@@ -34567,8 +34217,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "奥本海默": {
@@ -34654,8 +34303,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "云翼想": {
@@ -34741,8 +34389,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lzh": {
@@ -34822,8 +34469,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "rubia": {
@@ -34916,8 +34562,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "qfsm000": {
@@ -35003,8 +34648,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "愚者": {
@@ -35090,8 +34734,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "巴卜": {
@@ -35177,8 +34820,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hydroate": {
@@ -35264,8 +34906,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "绯夜": {
@@ -35345,8 +34986,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hanaseikai": {
@@ -35426,8 +35066,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "美味假肢": {
@@ -35513,8 +35152,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "huky": {
@@ -35600,8 +35238,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "罗德岛制药": {
@@ -35687,8 +35324,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "栗子φ": {
@@ -35768,8 +35404,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xiedu": {
@@ -35874,8 +35509,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "孙柏轩": {
@@ -35949,8 +35583,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "goldenhorde": {
@@ -36030,8 +35663,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "光州资本": {
@@ -36117,8 +35749,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "歳月": {
@@ -36192,8 +35823,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "resfir": {
@@ -36275,8 +35905,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mjq": {
@@ -36352,16 +35981,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "huckebein": {
       "metadata": {
         "user_key": "huckebein",
         "input_names": [
-          "Huckebein",
-          "huckebein"
+          "huckebein",
+          "Huckebein"
         ],
         "user_ids": [
           "u4414d96aa37a",
@@ -36441,8 +36069,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "在梦中": {
@@ -36535,8 +36162,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "msiga": {
@@ -36616,8 +36242,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "litianping": {
@@ -36697,8 +36322,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "林羽": {
@@ -36778,8 +36402,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "颍川李氏": {
@@ -36865,8 +36488,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "落雨": {
@@ -36946,8 +36568,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "毛毛": {
@@ -37033,8 +36654,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "树鸣啸叶": {
@@ -37120,8 +36740,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "火星原住民": {
@@ -37201,8 +36820,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "火鸡味锅巴": {
@@ -37294,8 +36912,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "花火": {
@@ -37381,8 +36998,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "任易yee": {
@@ -37456,8 +37072,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "白金": {
@@ -37537,8 +37152,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 3
+        "max_score_top10": null
       }
     },
     "sking1234": {
@@ -37612,8 +37226,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "fangruoning": {
@@ -37693,8 +37306,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "slyrak": {
@@ -37768,8 +37380,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "anomaly": {
@@ -37849,8 +37460,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "abandom": {
@@ -37945,12 +37555,11 @@
       "global_rankings": {
         "total_games_top10": null,
         "win_rate_top10": null,
-        "avg_position_top10": null,
+        "avg_position_top10": 9,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dzl05": {
@@ -38048,8 +37657,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zing": {
@@ -38178,8 +37786,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "北方提不起劲": {
@@ -38277,9 +37884,8 @@
         "avg_position_top10": null,
         "total_cards_top10": null,
         "shortest_generations_top10": null,
-        "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "longest_generations_top10": 3,
+        "max_score_top10": null
       }
     },
     "moirae": {
@@ -38384,8 +37990,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "帝星飘摇荧惑高": {
@@ -38484,8 +38089,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jim": {
@@ -38565,8 +38169,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "luzi": {
@@ -38646,8 +38249,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cs1867": {
@@ -38742,8 +38344,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mapliar": {
@@ -38825,8 +38426,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "steamriki": {
@@ -38914,16 +38514,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xin": {
       "metadata": {
         "user_key": "xin",
         "input_names": [
-          "Xin",
-          "xin"
+          "xin",
+          "Xin"
         ],
         "user_ids": [
           "u898233500de7",
@@ -38997,8 +38596,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xuyan11": {
@@ -39080,8 +38678,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "奶茶": {
@@ -39161,8 +38758,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sukitayo": {
@@ -39242,8 +38838,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "17826818782": {
@@ -39323,8 +38918,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "funny": {
@@ -39404,8 +38998,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 4
+        "max_score_top10": null
       }
     },
     "王七": {
@@ -39485,8 +39078,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "比翼龙渊": {
@@ -39572,8 +39164,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "icyrock": {
@@ -39653,8 +39244,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "smy": {
@@ -39740,8 +39330,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "teemomillion": {
@@ -39834,8 +39423,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "不如原神": {
@@ -39915,8 +39503,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 9
+        "max_score_top10": null
       }
     },
     "茵菓~": {
@@ -39996,8 +39583,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yzxh": {
@@ -40090,8 +39676,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "殇山早行": {
@@ -40183,8 +39768,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "shallowvir": {
@@ -40264,8 +39848,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hamburger": {
@@ -40382,8 +39965,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "暮月": {
@@ -40463,8 +40045,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "懿梦": {
@@ -40581,8 +40162,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "llz": {
@@ -40674,8 +40254,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "razorzzz": {
@@ -40755,8 +40334,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "muxiaqing": {
@@ -40842,8 +40420,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "suyiteng": {
@@ -40923,8 +40500,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mooncity2": {
@@ -41004,8 +40580,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "万万": {
@@ -41091,8 +40666,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "我超凶的": {
@@ -41178,8 +40752,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hmway1991": {
@@ -41259,8 +40832,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "jay zhu jin": {
@@ -41340,8 +40912,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cicler": {
@@ -41440,8 +41011,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "baykin": {
@@ -41533,8 +41103,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "失落": {
@@ -41626,8 +41195,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "麻瓜": {
@@ -41707,8 +41275,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "edwarde": {
@@ -41801,8 +41368,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "牧羊人": {
@@ -41888,8 +41454,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ex": {
@@ -41971,8 +41536,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zwj": {
@@ -42054,16 +41618,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "sigh": {
       "metadata": {
         "user_key": "sigh",
         "input_names": [
-          "Sigh",
-          "sigh"
+          "sigh",
+          "Sigh"
         ],
         "user_ids": [
           "u147c3a7e21d2",
@@ -42137,16 +41700,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "twistzz": {
       "metadata": {
         "user_key": "twistzz",
         "input_names": [
-          "Twistzz",
-          "twistzz"
+          "twistzz",
+          "Twistzz"
         ],
         "user_ids": [
           "u77dd2f1f74b3",
@@ -42214,16 +41776,15 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yeeziiii": {
       "metadata": {
         "user_key": "yeeziiii",
         "input_names": [
-          "YeeZiiii",
-          "yeeziiii"
+          "yeeziiii",
+          "YeeZiiii"
         ],
         "user_ids": [
           "u8e183f03c372",
@@ -42297,8 +41858,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lyr": {
@@ -42384,8 +41944,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "carlo573": {
@@ -42465,8 +42024,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "yhl": {
@@ -42565,8 +42123,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "请叫我火华桑": {
@@ -42640,8 +42197,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "maggiezheng": {
@@ -42721,8 +42277,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "psyduck": {
@@ -42802,8 +42357,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "白河": {
@@ -42883,8 +42437,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "bronya": {
@@ -42964,8 +42517,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "weisanyan": {
@@ -43045,8 +42597,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "慎独ssy": {
@@ -43126,8 +42677,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "独断万古": {
@@ -43207,8 +42757,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "fishhhhh": {
@@ -43288,8 +42837,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": 10
+        "max_score_top10": null
       }
     },
     "soraki": {
@@ -43381,8 +42929,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "星落月": {
@@ -43474,8 +43021,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "2441228751": {
@@ -43561,8 +43107,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ycx": {
@@ -43642,8 +43187,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kotonenolove": {
@@ -43729,8 +43273,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "silenceyee": {
@@ -43810,8 +43353,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "aa-代打代练": {
@@ -43891,8 +43433,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "鸦鸦": {
@@ -43978,8 +43519,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "大英警察": {
@@ -44072,8 +43612,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "altria": {
@@ -44153,8 +43692,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kaka": {
@@ -44234,8 +43772,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zys123": {
@@ -44334,8 +43871,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "myjjjjj": {
@@ -44415,8 +43951,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "shiningasuna": {
@@ -44496,8 +44031,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kot33": {
@@ -44571,8 +44105,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "薛定谔": {
@@ -44664,8 +44197,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "shawnxx": {
@@ -44747,8 +44279,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "takanashi": {
@@ -44830,8 +44361,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "徐景哲": {
@@ -44911,8 +44441,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cqdelinzi": {
@@ -44992,8 +44521,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "雅可": {
@@ -45073,8 +44601,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tungtungtungsahur": {
@@ -45154,8 +44681,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "这能好玩吗": {
@@ -45254,8 +44780,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "幸运小马": {
@@ -45335,8 +44860,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cs4717": {
@@ -45410,8 +44934,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "nanaruru": {
@@ -45491,8 +45014,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "longbefore523": {
@@ -45585,8 +45107,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hollync": {
@@ -45672,8 +45193,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "tieor": {
@@ -45747,8 +45267,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "terry": {
@@ -45834,8 +45353,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "菠萝小笼包": {
@@ -45915,8 +45433,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "salaman": {
@@ -46002,8 +45519,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "无敌大大大": {
@@ -46083,8 +45599,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "rinaoto": {
@@ -46170,8 +45685,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "北辰": {
@@ -46251,8 +45765,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "十万人爱戴的火星企业家": {
@@ -46332,8 +45845,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "pwq00": {
@@ -46420,8 +45932,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "zxq51234": {
@@ -46501,8 +46012,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "15880561707": {
@@ -46588,8 +46098,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lidamiao": {
@@ -46669,8 +46178,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kongbai": {
@@ -46744,8 +46252,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "特拉华的皮卡丘": {
@@ -46825,8 +46332,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "戴斯蒙": {
@@ -46906,8 +46412,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "想都没有": {
@@ -46987,8 +46492,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lastxuan": {
@@ -47068,8 +46572,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "empty_zhm": {
@@ -47143,8 +46646,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "linxi": {
@@ -47224,8 +46726,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "kawasakitaki": {
@@ -47299,8 +46800,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "胡泽宇": {
@@ -47380,8 +46880,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "浩南": {
@@ -47461,8 +46960,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "qa": {
@@ -47542,8 +47040,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "guugle": {
@@ -47617,8 +47114,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "dreamwind": {
@@ -47700,8 +47196,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "对酒当歌": {
@@ -47781,8 +47276,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "nm": {
@@ -47868,8 +47362,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "m7-11": {
@@ -47949,8 +47442,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "决心不坚定": {
@@ -48030,8 +47522,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hdjcjw": {
@@ -48117,8 +47608,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "我来监督沙瑞金": {
@@ -48198,8 +47688,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "秋秋": {
@@ -48279,8 +47768,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "ginger": {
@@ -48360,8 +47848,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lucidjellyfish": {
@@ -48447,8 +47934,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wwh666": {
@@ -48535,8 +48021,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "盗良人": {
@@ -48616,8 +48101,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "键盘狂奔鸡": {
@@ -48697,8 +48181,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xqc": {
@@ -48778,8 +48261,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "akikaze": {
@@ -48859,8 +48341,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "destiny": {
@@ -48940,8 +48421,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "wugehetao": {
@@ -49015,8 +48495,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "薯来宝": {
@@ -49109,8 +48588,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "火羽夏风": {
@@ -49184,8 +48662,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "短指甲龙子": {
@@ -49265,8 +48742,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hehe3": {
@@ -49346,8 +48822,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "陆唐儿": {
@@ -49427,8 +48902,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hsmh114514": {
@@ -49514,8 +48988,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "一山": {
@@ -49595,8 +49068,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cfy040218": {
@@ -49670,8 +49142,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "abcdefg": {
@@ -49751,8 +49222,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "cici1025": {
@@ -49832,8 +49302,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "mouliu": {
@@ -49913,8 +49382,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "xiang0": {
@@ -49988,8 +49456,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "韮芙": {
@@ -50075,8 +49542,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "bytr": {
@@ -50156,8 +49622,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "korgast": {
@@ -50237,8 +49702,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "qingcen": {
@@ -50325,8 +49789,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "刀刀给你一拳": {
@@ -50406,8 +49869,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "97": {
@@ -50487,8 +49949,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "比翼瑶光": {
@@ -50568,8 +50029,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "hindsight": {
@@ -50649,8 +50109,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "调和": {
@@ -50736,8 +50195,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "我避他锋芒？": {
@@ -50817,8 +50275,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "奈 何": {
@@ -50898,8 +50355,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "🍁": {
@@ -50973,8 +50429,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "liuhui": {
@@ -51056,8 +50511,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     },
     "lizabove": {
@@ -51139,8 +50593,7 @@
         "total_cards_top10": null,
         "shortest_generations_top10": null,
         "longest_generations_top10": null,
-        "max_score_top10": null,
-        "trueskill_top10": null
+        "max_score_top10": null
       }
     }
   }
