@@ -64,12 +64,12 @@ export default function ReportSlide({ config, report, isActive, scrollRef }: IRe
       {/* Mars horizon glow at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-mars-rust/10 to-transparent pointer-events-none" />
 
-      {/* Scrollable content area - 从顶部开始，超出可滚动，上滑到底后再允许切下一页 */}
+      {/* Scrollable content area */}
       <div
         ref={scrollRef}
-        className="flex-1 min-h-0 overflow-y-auto overscroll-none hide-scrollbar"
+        className="relative z-10 flex-1 min-h-0 overflow-y-auto overscroll-none hide-scrollbar"
       >
-        <div className="flex flex-col items-center p-4 md:p-8 w-full max-w-4xl mx-auto">
+        <div className="flex flex-col items-center min-h-full pt-16 pb-20 px-4 md:px-8 w-full max-w-4xl mx-auto justify-center">
           {renderContent()}
         </div>
       </div>
@@ -852,7 +852,7 @@ function EndingTemplate({
   // 生成分享文本（仅主称号 + 局数）
   const generateShareText = () => {
     const username = report.username;
-    let shareText = `🚀 我的2025火星改造年度报告\n\n`;
+    let shareText = `🚀 我的2025殖民火星年度报告\n\n`;
     shareText += `👤 玩家：${username}\n`;
     if (bestTitle && stats) {
       shareText += `🏅 ${bestTitle.name} | ${stats.total_games}局游戏\n`;
@@ -861,7 +861,9 @@ function EndingTemplate({
     } else if (stats) {
       shareText += `📊 ${stats.total_games}局游戏\n`;
     }
-    shareText += `\n#TerraformingMars #火星改造 #年度报告`;
+    shareText += `\nhttps://tfm.ender-wiggin.com\n`;
+
+    shareText += `\n#TerraformingMars #殖民火星 #年度报告`;
     return shareText;
   };
 
@@ -872,7 +874,7 @@ function EndingTemplate({
     if (navigator.share) {
       try {
         await navigator.share({
-          title: '我的火星改造年度报告',
+          title: '我的殖民火星年度报告',
           text: shareText,
         });
         setShareStatus('shared');

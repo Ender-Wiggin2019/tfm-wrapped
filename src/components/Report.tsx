@@ -15,7 +15,6 @@ export default function Report({ report, onBack }: IReportProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const slideScrollRef = useRef<HTMLDivElement>(null);
   const touchStartY = useRef(0);
-  const touchStartScrollTop = useRef(0);
   const lastScrollTime = useRef(0);
 
   // 提取模板变量
@@ -139,42 +138,42 @@ export default function Report({ report, onBack }: IReportProps) {
     };
   }, [nextSlide, prevSlide]);
 
-  // 触摸导航（支持页面内滚动：仅在 slide 边缘且未发生滚动时切换页面）
+  // 触摸导航：滑到底再切下一页，在顶部才切上一页
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartY.current = e.touches[0].clientY;
-    touchStartScrollTop.current = slideScrollRef.current?.scrollTop ?? 0;
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     const touchEndY = e.changedTouches[0].clientY;
-    const diff = touchStartY.current - touchEndY;
+    const diff = touchStartY.current - touchEndY; // >0 = 手指向上（想看下一页），<0 = 手指向下（想看上一页）
     const scrollEl = slideScrollRef.current;
 
-    // 若 slide 内发生了滚动，不切换页面
-    const scrollTopNow = scrollEl?.scrollTop ?? 0;
-    if (Math.abs(scrollTopNow - touchStartScrollTop.current) > 5) {
-      return;
-    }
+    if (Math.abs(diff) <= 50) return; // 滑动距离不够
 
-    if (Math.abs(diff) <= 50) return;
-
+    const scrollTop = scrollEl?.scrollTop ?? 0;
     const scrollHeight = scrollEl?.scrollHeight ?? 0;
     const clientHeight = scrollEl?.clientHeight ?? 0;
-    const atTop = (scrollEl?.scrollTop ?? 0) <= 0;
-    const atBottom = scrollHeight - clientHeight <= (scrollEl?.scrollTop ?? 0) + 5;
+    const canScroll = scrollHeight > clientHeight + 5; // 内容是否超出一屏
+    const atTop = scrollTop <= 2;
+    const atBottom = scrollHeight - clientHeight <= scrollTop + 2;
 
-    // 下滑（手指向下）= 上一页（需在顶部）；上滑（手指向上）= 下一页（需在底部）
-    if (diff < 0 && atTop) {
-      prevSlide();
-    } else if (diff > 0 && atBottom) {
+    if (diff > 0) {
+      // 手指向上 → 想去下一页
+      // 如果内容可滚动且还没到底，不切换（让原生滚动处理）
+      if (canScroll && !atBottom) return;
       nextSlide();
+    } else {
+      // 手指向下 → 想去上一页
+      // 如果内容可滚动且不在顶部，不切换
+      if (canScroll && !atTop) return;
+      prevSlide();
     }
   };
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-screen overflow-hidden bg-mars-void touch-action-manipulation"
+      className="relative w-full h-screen overflow-hidden bg-mars-void"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >

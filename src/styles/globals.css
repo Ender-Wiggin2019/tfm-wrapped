@@ -53,9 +53,14 @@
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
+  overflow: hidden;
+  height: 100%;
+  overscroll-behavior: none;
   color: rgb(var(--foreground-primary));
   background: var(--background-primary);
   min-height: 100vh;
