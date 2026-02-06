@@ -169,7 +169,9 @@ export const textConfig = {
     playerCountLabel: '游玩人数',
     submitButton: '查看我的年度报告',
     player2Label: '2人局',
+    player3Label: '3人局',
     player4Label: '4人局',
+    otherPlayersLabel: '其它人数',
   },
   // 错误提示
   errors: {

@@ -1,6 +1,6 @@
 // 游戏数据相关类型定义
 
-export type TPlayerCount = 2 | 4;
+export type TPlayerCount = 2 | 3 | 4;
 
 // 排名条目
 export interface IRankingEntry {

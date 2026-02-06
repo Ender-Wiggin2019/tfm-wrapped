@@ -263,7 +263,7 @@ export function calculateRadarData(
     avg_cards_played: number;
     avg_generations: number;
   },
-  playerCount: 2 | 4
+  playerCount: 2 | 3 | 4
 ): IRadarDataPoint[] {
   // Define normalization ranges based on typical values
   // These can be adjusted based on actual data distribution

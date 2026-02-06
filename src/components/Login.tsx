@@ -49,10 +49,15 @@ function OrbitingBody({ size, distance, duration, color }: {
   );
 }
 
+const buttonBaseClass = 'py-4 px-6 rounded-xl border-2 transition-all duration-300 font-display font-medium tracking-wide focus-visible:ring-2 focus-visible:ring-mars-rust/50 focus-visible:outline-none';
+const buttonSelectedClass = 'border-mars-rust bg-mars-rust/20 text-mars-terracotta shadow-mars-glow/50';
+const buttonUnselectedClass = 'border-mars-rust/20 bg-mars-void/40 text-white/60 hover:border-mars-rust/40 hover:bg-mars-rust/10';
+
 export default function Login({ onLogin, isLoading = false, error }: ILoginProps) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [playerCount, setPlayerCount] = useState<TPlayerCount>(4);
+  const [showOtherRow, setShowOtherRow] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const { login: text } = textConfig;
@@ -228,34 +233,62 @@ export default function Login({ onLogin, isLoading = false, error }: ILoginProps
               <label className="block text-sm font-display font-medium text-mars-dust tracking-wide uppercase">
                 {text.playerCountLabel}
               </label>
-              <div className="grid grid-cols-2 gap-4">
+              {/* 第一行：四人 2/3，其它人数 1/3 */}
+              <div className="flex gap-4">
                 <button
                   type="button"
-                  onClick={() => setPlayerCount(2)}
+                  onClick={() => {
+                    setPlayerCount(4);
+                    setShowOtherRow(false);
+                  }}
                   disabled={isLoading}
-                  className={`py-4 px-6 rounded-xl border-2 transition-all duration-300 font-display font-medium tracking-wide
-                    focus-visible:ring-2 focus-visible:ring-mars-rust/50 focus-visible:outline-none ${
-                    playerCount === 2
-                      ? 'border-mars-rust bg-mars-rust/20 text-mars-terracotta shadow-mars-glow/50'
-                      : 'border-mars-rust/20 bg-mars-void/40 text-white/60 hover:border-mars-rust/40 hover:bg-mars-rust/10'
+                  className={`flex-1 ${buttonBaseClass} ${
+                    playerCount === 4 ? buttonSelectedClass : buttonUnselectedClass
                   }`}
-                >
-                  {text.player2Label}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setPlayerCount(4)}
-                  disabled={isLoading}
-                  className={`py-4 px-6 rounded-xl border-2 transition-all duration-300 font-display font-medium tracking-wide
-                    focus-visible:ring-2 focus-visible:ring-mars-rust/50 focus-visible:outline-none ${
-                    playerCount === 4
-                      ? 'border-mars-rust bg-mars-rust/20 text-mars-terracotta shadow-mars-glow/50'
-                      : 'border-mars-rust/20 bg-mars-void/40 text-white/60 hover:border-mars-rust/40 hover:bg-mars-rust/10'
-                  }`}
+                  style={{ flex: 2 }}
                 >
                   {text.player4Label}
                 </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowOtherRow((prev) => !prev);
+                    if (!showOtherRow && playerCount === 4) setPlayerCount(2);
+                  }}
+                  disabled={isLoading}
+                  className={`flex-1 ${buttonBaseClass} ${
+                    playerCount === 2 || playerCount === 3 ? buttonSelectedClass : buttonUnselectedClass
+                  }`}
+                  style={{ flex: 1 }}
+                >
+                  {text.otherPlayersLabel}
+                </button>
               </div>
+              {/* 第二行：二人、三人（点击其它人数后展示） */}
+              {showOtherRow && (
+                <div className="grid grid-cols-2 gap-4 animate-fadeIn">
+                  <button
+                    type="button"
+                    onClick={() => setPlayerCount(2)}
+                    disabled={isLoading}
+                    className={`${buttonBaseClass} ${
+                      playerCount === 2 ? buttonSelectedClass : buttonUnselectedClass
+                    }`}
+                  >
+                    {text.player2Label}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPlayerCount(3)}
+                    disabled={isLoading}
+                    className={`${buttonBaseClass} ${
+                      playerCount === 3 ? buttonSelectedClass : buttonUnselectedClass
+                    }`}
+                  >
+                    {text.player3Label}
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* Error Message */}

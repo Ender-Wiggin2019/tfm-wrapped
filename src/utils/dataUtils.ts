@@ -4,20 +4,64 @@ import {
   IProcessedUserReport,
   TPlayerCount,
   IReportSlideConfig,
+  IRankingEntry,
 } from '@/types';
+
+const TOP10_TO_TOP100_KEYS: Record<string, string> = {
+  total_games_top10: 'total_games_top100',
+  win_rate_top10: 'win_rate_top100',
+  avg_position_top10: 'avg_position_top100',
+  total_cards_top10: 'total_cards_top100',
+  shortest_generations_top10: 'shortest_generations_top100',
+  longest_generations_top10: 'longest_generations_top100',
+  max_score_top10: 'max_score_top100',
+};
+
+function normalize3pData(rawData: Record<string, unknown>): IGameData {
+  const data = JSON.parse(JSON.stringify(rawData)) as IGameData;
+  const rankings = (data.rankings ?? {}) as Record<string, IRankingEntry[] | undefined>;
+  const newRankings: Record<string, IRankingEntry[] | undefined> = {};
+  for (const [key, value] of Object.entries(rankings)) {
+    const newKey = (TOP10_TO_TOP100_KEYS as Record<string, string>)[key] ?? key;
+    newRankings[newKey] = value;
+  }
+  data.rankings = newRankings as IGameData['rankings'];
+
+  const users = data.users;
+  for (const userKey of Object.keys(users)) {
+    const user = users[userKey];
+    const gr = user.global_rankings as unknown as Record<string, number | null>;
+    const newGr: Record<string, number | null> = {};
+    for (const [key, value] of Object.entries(gr)) {
+      const newKey = (TOP10_TO_TOP100_KEYS as Record<string, string>)[key] ?? key;
+      newGr[newKey] = value;
+    }
+    user.global_rankings = newGr as unknown as IUserData['global_rankings'];
+  }
+  return data;
+}
 
 /**
  * 加载游戏数据
  */
 export async function loadGameData(playerCount: TPlayerCount): Promise<IGameData> {
-  const fileName = playerCount === 2 ? 'batch_user_aggregate_2p.json' : 'batch_user_aggregate_4p.json';
+  const fileMap: Record<TPlayerCount, string> = {
+    2: 'batch_user_aggregate_2p.json',
+    3: 'batch_user_aggregate_3p.json',
+    4: 'batch_user_aggregate_4p.json',
+  };
+  const fileName = fileMap[playerCount];
   const response = await fetch(`/data/${fileName}`);
 
   if (!response.ok) {
     throw new Error(`Failed to load data: ${response.statusText}`);
   }
 
-  return response.json();
+  const rawData = await response.json();
+  if (playerCount === 3) {
+    return normalize3pData(rawData);
+  }
+  return rawData as IGameData;
 }
 
 /**
@@ -128,11 +172,11 @@ export function extractUserVariables(
     totalTR: Math.round(stats.total_tr_sum),
     mostPlayedGen,
     avgGenerations: stats.avg_generations.toFixed(1),
-    // 排名信息
-    gamesRank: userData.global_rankings.total_games_top100 || '100+',
-    winRateRank: userData.global_rankings.win_rate_top100 || '100+',
-    avgPositionRank: userData.global_rankings.avg_position_top100 || '100+',
-    cardsRank: userData.global_rankings.total_cards_top100 || '100+',
+    // 排名信息（3人局用 top10，显示 10+；2/4人局用 top100，显示 100+）
+    gamesRank: userData.global_rankings.total_games_top100 ?? (playerCount === 3 ? '10+' : '100+'),
+    winRateRank: userData.global_rankings.win_rate_top100 ?? (playerCount === 3 ? '10+' : '100+'),
+    avgPositionRank: userData.global_rankings.avg_position_top100 ?? (playerCount === 3 ? '10+' : '100+'),
+    cardsRank: userData.global_rankings.total_cards_top100 ?? (playerCount === 3 ? '10+' : '100+'),
   };
 }
 
@@ -181,7 +225,7 @@ export function getRankDescription(rank: number | null | string): string {
  * 获取胜率评价
  */
 export function getWinRateEvaluation(winRate: number, playerCount: TPlayerCount): string {
-  const avgWinRate = playerCount === 2 ? 50 : 25;
+  const avgWinRate = playerCount === 2 ? 50 : playerCount === 3 ? 100 / 3 : 25;
 
   if (winRate >= avgWinRate * 2) {
     return '火星女神的宠儿！';

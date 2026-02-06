@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IReportSlideConfig, IProcessedUserReport, IUserData, ICorporationRanking } from '@/types';
+import { IReportSlideConfig, IProcessedUserReport, IUserData, ICorporationRanking, TPlayerCount } from '@/types';
 import {
   getWinRateEvaluation,
   getGamesEvaluation,
@@ -187,7 +187,7 @@ function HighlightTemplate({
 }: {
   config: IReportSlideConfig;
   userData: IUserData | null;
-  playerCount: number;
+  playerCount: TPlayerCount;
 }) {
   const stats = userData?.player_stats;
 
@@ -229,7 +229,7 @@ function HighlightTemplate({
             <svg className="w-6 h-6 text-mars-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M10 .5a9.5 9.5 0 109.5 9.5A9.51 9.51 0 0010 .5zm3.707 8.207l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L9 10.586l3.293-3.293a1 1 0 011.414 1.414z" />
             </svg>
-            {getWinRateEvaluation(stats.win_rate, playerCount as 2 | 4)}
+            {getWinRateEvaluation(stats.win_rate, playerCount)}
           </span>
         </div>
       )}
@@ -407,7 +407,7 @@ function RadarTemplate({
 }: {
   config: IReportSlideConfig;
   userData: IUserData | null;
-  playerCount: number;
+  playerCount: TPlayerCount;
 }) {
   if (!userData) return <DefaultTemplate config={config} />;
 
@@ -420,7 +420,7 @@ function RadarTemplate({
       avg_cards_played: stats.avg_cards_played,
       avg_generations: stats.avg_generations,
     },
-    playerCount as 2 | 4
+    playerCount
   );
 
   const overallScore = Math.round(radarData.reduce((sum, d) => sum + d.value, 0) / radarData.length);
@@ -838,13 +838,13 @@ function EndingTemplate({
   const getBestTitle = (): { rank: number; name: string } | null => {
     if (!rankings) return null;
     const titles: { rank: number; name: string }[] = [];
-    if (rankings.total_games_top100) titles.push({ rank: rankings.total_games_top100, name: `火星第${numberToChinese(rankings.total_games_top100)}常客` });
-    if (rankings.win_rate_top100) titles.push({ rank: rankings.win_rate_top100, name: `火星第${numberToChinese(rankings.win_rate_top100)}高手` });
+    if (rankings.total_games_top100) titles.push({ rank: rankings.total_games_top100, name: `火星第${numberToChinese(rankings.total_games_top100)}肝帝` });
+    if (rankings.win_rate_top100) titles.push({ rank: rankings.win_rate_top100, name: `火星第${numberToChinese(rankings.win_rate_top100)}大神` });
     if (rankings.total_cards_top100) titles.push({ rank: rankings.total_cards_top100, name: `火星第${numberToChinese(rankings.total_cards_top100)}项目达人` });
     if (rankings.avg_position_top100) titles.push({ rank: rankings.avg_position_top100, name: `火星第${numberToChinese(rankings.avg_position_top100)}改造先锋` });
-    if (rankings.shortest_generations_top100) titles.push({ rank: rankings.shortest_generations_top100, name: `火星第${numberToChinese(rankings.shortest_generations_top100)}速通玩家` });
-    if (rankings.longest_generations_top100) titles.push({ rank: rankings.longest_generations_top100, name: `火星第${numberToChinese(rankings.longest_generations_top100)}策略大师` });
-    if (rankings.trueskill_top200) titles.push({ rank: rankings.trueskill_top200, name: `天梯第${numberToChinese(rankings.trueskill_top200)}强者` });
+    if (rankings.shortest_generations_top100) titles.push({ rank: rankings.shortest_generations_top100, name: `火星第${numberToChinese(rankings.shortest_generations_top100)}快枪手` });
+    if (rankings.longest_generations_top100) titles.push({ rank: rankings.longest_generations_top100, name: `火星第${numberToChinese(rankings.longest_generations_top100)}拖拖怪` });
+    if (rankings.trueskill_top200) titles.push({ rank: rankings.trueskill_top200, name: `天梯国服第${numberToChinese(rankings.trueskill_top200)}` });
     return titles.length > 0 ? titles.reduce((prev, curr) => (curr.rank < prev.rank ? curr : prev)) : null;
   };
 
