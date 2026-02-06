@@ -13,7 +13,9 @@ export default function Report({ report, onBack }: IReportProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const slideScrollRef = useRef<HTMLDivElement>(null);
   const touchStartY = useRef(0);
+  const touchStartScrollTop = useRef(0);
   const lastScrollTime = useRef(0);
 
   // 提取模板变量
@@ -125,21 +127,35 @@ export default function Report({ report, onBack }: IReportProps) {
     };
   }, [nextSlide, prevSlide]);
 
-  // 触摸导航
+  // 触摸导航（支持页面内滚动：仅在 slide 边缘且未发生滚动时切换页面）
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartY.current = e.touches[0].clientY;
+    touchStartScrollTop.current = slideScrollRef.current?.scrollTop ?? 0;
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     const touchEndY = e.changedTouches[0].clientY;
     const diff = touchStartY.current - touchEndY;
+    const scrollEl = slideScrollRef.current;
 
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) {
-        nextSlide();
-      } else {
-        prevSlide();
-      }
+    // 若 slide 内发生了滚动，不切换页面
+    const scrollTopNow = scrollEl?.scrollTop ?? 0;
+    if (Math.abs(scrollTopNow - touchStartScrollTop.current) > 5) {
+      return;
+    }
+
+    if (Math.abs(diff) <= 50) return;
+
+    const scrollHeight = scrollEl?.scrollHeight ?? 0;
+    const clientHeight = scrollEl?.clientHeight ?? 0;
+    const atTop = (scrollEl?.scrollTop ?? 0) <= 0;
+    const atBottom = scrollHeight - clientHeight <= (scrollEl?.scrollTop ?? 0) + 5;
+
+    // 仅在边缘允许切换：向下滑切下一页需在顶部，向上滑切上一页需在底部
+    if (diff > 0 && atTop) {
+      nextSlide();
+    } else if (diff < 0 && atBottom) {
+      prevSlide();
     }
   };
 
@@ -173,31 +189,10 @@ export default function Report({ report, onBack }: IReportProps) {
               config={slide}
               report={report}
               isActive={index === currentSlide}
+              scrollRef={index === currentSlide ? slideScrollRef : undefined}
             />
           </div>
         ))}
-      </div>
-
-      {/* Mars-styled Progress Indicator */}
-      <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50">
-        <div className="flex flex-col gap-2 p-2 rounded-full glass-dark">
-          {processedSlides.map((slide, index) => (
-            <button
-              key={slide.id}
-              onClick={() => goToSlide(index)}
-              className={`relative w-2.5 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-mars-rust focus-visible:outline-none ${
-                index === currentSlide
-                  ? 'h-8 bg-gradient-to-b from-mars-terracotta to-mars-rust shadow-mars-glow'
-                  : 'h-2.5 bg-mars-rust/30 hover:bg-mars-rust/50'
-              }`}
-              aria-label={`跳转到第 ${index + 1} 页`}
-            >
-              {index === currentSlide && (
-                <span className="absolute inset-0 rounded-full animate-pulse-glow" />
-              )}
-            </button>
-          ))}
-        </div>
       </div>
 
       {/* Top Navigation Bar - Mars Colony HUD Style */}
@@ -287,9 +282,9 @@ export default function Report({ report, onBack }: IReportProps) {
 
       {/* Decorative corner elements */}
       <div className="fixed top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-mars-rust/20 rounded-tl-lg pointer-events-none" />
-      <div className="fixed top-4 right-20 w-8 h-8 border-r-2 border-t-2 border-mars-rust/20 rounded-tr-lg pointer-events-none" />
+      <div className="fixed top-4 right-4 w-8 h-8 border-r-2 border-t-2 border-mars-rust/20 rounded-tr-lg pointer-events-none" />
       <div className="fixed bottom-20 left-4 w-8 h-8 border-l-2 border-b-2 border-mars-rust/20 rounded-bl-lg pointer-events-none" />
-      <div className="fixed bottom-20 right-20 w-8 h-8 border-r-2 border-b-2 border-mars-rust/20 rounded-br-lg pointer-events-none" />
+      <div className="fixed bottom-20 right-4 w-8 h-8 border-r-2 border-b-2 border-mars-rust/20 rounded-br-lg pointer-events-none" />
     </div>
   );
 }

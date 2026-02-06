@@ -12,9 +12,10 @@ interface IReportSlideProps {
   config: IReportSlideConfig;
   report: IProcessedUserReport;
   isActive: boolean;
+  scrollRef?: React.RefObject<HTMLDivElement>;
 }
 
-export default function ReportSlide({ config, report, isActive }: IReportSlideProps) {
+export default function ReportSlide({ config, report, isActive, scrollRef }: IReportSlideProps) {
   const { userData, playerCount } = report;
 
   // 根据模板类型渲染不同的内容
@@ -47,7 +48,7 @@ export default function ReportSlide({ config, report, isActive }: IReportSlidePr
 
   return (
     <div
-      className={`w-full h-full flex flex-col items-center justify-center p-4 md:p-8 bg-gradient-to-br ${
+      className={`w-full h-full flex flex-col bg-gradient-to-br ${
         config.backgroundColor || 'from-mars-void to-mars-abyss'
       } transition-all duration-700 relative overflow-hidden ${
         isActive ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
@@ -63,9 +64,14 @@ export default function ReportSlide({ config, report, isActive }: IReportSlidePr
       {/* Mars horizon glow at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-mars-rust/10 to-transparent pointer-events-none" />
 
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-4xl">
-        {renderContent()}
+      {/* Scrollable content area - allows in-page scroll when content overflows */}
+      <div
+        ref={scrollRef}
+        className="flex-1 min-h-0 overflow-y-auto overscroll-contain hide-scrollbar"
+      >
+        <div className="flex flex-col items-center justify-center p-4 md:p-8 min-h-full w-full max-w-4xl mx-auto">
+          {renderContent()}
+        </div>
       </div>
     </div>
   );
