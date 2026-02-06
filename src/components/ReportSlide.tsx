@@ -64,12 +64,12 @@ export default function ReportSlide({ config, report, isActive, scrollRef }: IRe
       {/* Mars horizon glow at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-mars-rust/10 to-transparent pointer-events-none" />
 
-      {/* Scrollable content area - allows in-page scroll when content overflows */}
+      {/* Scrollable content area - 从顶部开始，超出可滚动，上滑到底后再允许切下一页 */}
       <div
         ref={scrollRef}
-        className="flex-1 min-h-0 overflow-y-auto overscroll-contain hide-scrollbar"
+        className="flex-1 min-h-0 overflow-y-auto overscroll-none hide-scrollbar"
       >
-        <div className="flex flex-col items-center justify-center p-4 md:p-8 min-h-full w-full max-w-4xl mx-auto">
+        <div className="flex flex-col items-center p-4 md:p-8 w-full max-w-4xl mx-auto">
           {renderContent()}
         </div>
       </div>
@@ -831,14 +831,35 @@ function EndingTemplate({
   const [shareStatus, setShareStatus] = useState<'idle' | 'copied' | 'shared'>('idle');
 
   const stats = userData?.player_stats;
+  const rankings = userData?.global_rankings;
 
-  // 生成分享文本
+  // 获取主称号（排名最好的称号）
+  const getBestTitle = (): { rank: number; name: string } | null => {
+    if (!rankings) return null;
+    const titles: { rank: number; name: string }[] = [];
+    if (rankings.total_games_top100) titles.push({ rank: rankings.total_games_top100, name: `火星第${rankings.total_games_top100}常客` });
+    if (rankings.win_rate_top100) titles.push({ rank: rankings.win_rate_top100, name: `火星第${rankings.win_rate_top100}高手` });
+    if (rankings.total_cards_top100) titles.push({ rank: rankings.total_cards_top100, name: `火星第${rankings.total_cards_top100}项目达人` });
+    if (rankings.avg_position_top100) titles.push({ rank: rankings.avg_position_top100, name: `火星第${rankings.avg_position_top100}改造先锋` });
+    if (rankings.shortest_generations_top100) titles.push({ rank: rankings.shortest_generations_top100, name: `火星第${rankings.shortest_generations_top100}速通玩家` });
+    if (rankings.longest_generations_top100) titles.push({ rank: rankings.longest_generations_top100, name: `火星第${rankings.longest_generations_top100}策略大师` });
+    if (rankings.trueskill_top200) titles.push({ rank: rankings.trueskill_top200, name: `天梯第${rankings.trueskill_top200}强者` });
+    return titles.length > 0 ? titles.reduce((prev, curr) => (curr.rank < prev.rank ? curr : prev)) : null;
+  };
+
+  const bestTitle = getBestTitle();
+
+  // 生成分享文本（仅主称号 + 局数）
   const generateShareText = () => {
     const username = report.username;
     let shareText = `🚀 我的2025火星改造年度报告\n\n`;
     shareText += `👤 玩家：${username}\n`;
-    if (stats) {
-      shareText += `📊 ${stats.total_games}局游戏 | 胜率${stats.win_rate.toFixed(1)}%\n`;
+    if (bestTitle && stats) {
+      shareText += `🏅 ${bestTitle.name} | ${stats.total_games}局游戏\n`;
+    } else if (bestTitle) {
+      shareText += `🏅 ${bestTitle.name}\n`;
+    } else if (stats) {
+      shareText += `📊 ${stats.total_games}局游戏\n`;
     }
     shareText += `\n#TerraformingMars #火星改造 #年度报告`;
     return shareText;

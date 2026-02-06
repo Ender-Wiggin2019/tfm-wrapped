@@ -99,19 +99,31 @@ export default function Report({ report, onBack }: IReportProps) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [nextSlide, prevSlide, onBack]);
 
-  // 滚轮导航
+  // 滚轮导航（支持页面内滚动：仅在边缘时切换，否则让 slide 内部滚动）
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
-      e.preventDefault();
-      
+      const scrollEl = slideScrollRef.current;
+      const scrollHeight = scrollEl?.scrollHeight ?? 0;
+      const clientHeight = scrollEl?.clientHeight ?? 0;
+      const scrollTop = scrollEl?.scrollTop ?? 0;
+      const atTop = scrollTop <= 0;
+      const atBottom = scrollHeight - clientHeight <= scrollTop + 5;
+
       const now = Date.now();
-      if (now - lastScrollTime.current < 800) return;
-      lastScrollTime.current = now;
+      const throttleOk = now - lastScrollTime.current >= 300;
 
       if (e.deltaY > 0) {
-        nextSlide();
+        if (atBottom && throttleOk) {
+          e.preventDefault();
+          lastScrollTime.current = now;
+          nextSlide();
+        }
       } else if (e.deltaY < 0) {
-        prevSlide();
+        if (atTop && throttleOk) {
+          e.preventDefault();
+          lastScrollTime.current = now;
+          prevSlide();
+        }
       }
     };
 
@@ -151,11 +163,11 @@ export default function Report({ report, onBack }: IReportProps) {
     const atTop = (scrollEl?.scrollTop ?? 0) <= 0;
     const atBottom = scrollHeight - clientHeight <= (scrollEl?.scrollTop ?? 0) + 5;
 
-    // 仅在边缘允许切换：向下滑切下一页需在顶部，向上滑切上一页需在底部
-    if (diff > 0 && atTop) {
-      nextSlide();
-    } else if (diff < 0 && atBottom) {
+    // 下滑（手指向下）= 上一页（需在顶部）；上滑（手指向上）= 下一页（需在底部）
+    if (diff < 0 && atTop) {
       prevSlide();
+    } else if (diff > 0 && atBottom) {
+      nextSlide();
     }
   };
 
