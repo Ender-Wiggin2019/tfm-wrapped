@@ -2,11 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   MARS COLONY DESIGN SYSTEM - Terraforming Mars Wrapped
+   ═══════════════════════════════════════════════════════════════════════════ */
+
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 15, 23, 42;
-  --background-end-rgb: 15, 23, 42;
+  /* Mars Core Colors */
+  --mars-rust: #C1440E;
+  --mars-sienna: #A0522D;
+  --mars-oxide: #8B4513;
+  --mars-copper: #B87333;
+  --mars-terracotta: #E2725B;
+  
+  /* Deep Space */
+  --space-void: #0A0A0F;
+  --space-abyss: #0D1117;
+  --space-cosmos: #161B22;
+  --space-nebula: #1C2128;
+  
+  /* Terraforming Tech */
+  --terraform-cyan: #00D4FF;
+  --terraform-teal: #2DD4BF;
+  --terraform-green: #14F195;
+  
+  /* Achievement Gold */
+  --gold-primary: #FFB800;
+  --gold-amber: #F59E0B;
+  --gold-solar: #FBBF24;
+  
+  /* Martian Dust */
+  --dust-primary: #D4A574;
+  --dust-sand: #C9B896;
+  --dust-ochre: #CC7722;
+  
+  /* Background */
+  --background-primary: var(--space-void);
+  --foreground-primary: 255, 255, 255;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════════════════════════════════════════ */
 
 * {
   box-sizing: border-box;
@@ -16,49 +52,168 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-primary));
+  background: var(--background-primary);
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: 'Sora', system-ui, sans-serif;
+  
+  /* Subtle noise texture overlay */
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, var(--space-void) 0%, #0f0805 100%);
+  background-attachment: fixed;
 }
 
-/* 自定义滚动条 */
+/* ═══════════════════════════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-wrap: balance;
+}
+
+.font-display {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-body {
+  font-family: 'Sora', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CUSTOM SCROLLBAR - Mars Oxide Style
+   ═══════════════════════════════════════════════════════════════════════════ */
+
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 3px;
+  background: rgba(193, 68, 14, 0.05);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
+  background: linear-gradient(180deg, var(--mars-rust), var(--mars-oxide));
+  border-radius: 4px;
+  border: 1px solid rgba(193, 68, 14, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(180deg, var(--mars-terracotta), var(--mars-rust));
 }
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.05);
+  scrollbar-color: var(--mars-rust) rgba(193, 68, 14, 0.05);
 }
 
-/* 自定义动画 */
+/* ═══════════════════════════════════════════════════════════════════════════
+   MARS DUST PARTICLES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mars-dust-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mars-dust {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--dust-primary);
+  border-radius: 50%;
+  opacity: 0.4;
+  filter: blur(0.5px);
+}
+
+.mars-dust::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  filter: blur(2px);
+  opacity: 0.5;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ATMOSPHERIC EFFECTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.mars-atmosphere {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(193, 68, 14, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 20% 90%, rgba(226, 114, 91, 0.08) 0%, transparent 40%);
+  animation: atmospherePulse 8s ease-in-out infinite;
+}
+
+.mars-horizon-glow {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(
+    to top,
+    rgba(193, 68, 14, 0.2) 0%,
+    rgba(193, 68, 14, 0.1) 20%,
+    rgba(139, 69, 19, 0.05) 40%,
+    transparent 100%
+  );
+  animation: horizonGlow 6s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   TERRAFORMING GRID OVERLAY
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.terraform-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    linear-gradient(rgba(45, 212, 191, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 70% 50% at 50% 50%, black 0%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 50%, black 0%, transparent 80%);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   KEYFRAME ANIMATIONS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideUp {
@@ -117,133 +272,383 @@ body {
 }
 
 @keyframes twinkle {
-  0%, 100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 1;
-  }
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.8; }
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(251, 146, 60, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(251, 146, 60, 0.5);
-  }
+  0%, 100% { box-shadow: 0 0 20px rgba(193, 68, 14, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(193, 68, 14, 0.6); }
 }
 
-/* 动画类 */
-.animate-fadeIn {
-  animation: fadeIn 0.6s ease-out forwards;
+/* Mars-specific animations */
+@keyframes dustDrift {
+  0% { transform: translateX(-10%) translateY(0); opacity: 0; }
+  10% { opacity: 0.4; }
+  90% { opacity: 0.4; }
+  100% { transform: translateX(110%) translateY(-30px); opacity: 0; }
 }
 
-.animate-slideUp {
-  animation: slideUp 0.6s ease-out forwards;
+@keyframes atmospherePulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.02); }
 }
 
-.animate-slideRight {
-  animation: slideRight 0.5s ease-out forwards;
+@keyframes terraformScan {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(100%); opacity: 0; }
 }
 
-.animate-scaleUp {
-  animation: scaleUp 0.5s ease-out forwards;
+@keyframes solarFlare {
+  0%, 100% { filter: brightness(1) saturate(1); }
+  50% { filter: brightness(1.15) saturate(1.2); }
 }
 
-.animate-growUp {
-  animation: growUp 0.8s ease-out forwards;
+@keyframes horizonGlow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.9; }
 }
 
-.animate-countUp {
-  animation: countUp 0.8s ease-out forwards;
+@keyframes planetRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-.animate-twinkle {
-  animation: twinkle 3s ease-in-out infinite;
+@keyframes dataFlicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.3; }
+  94% { opacity: 1; }
+  96% { opacity: 0.5; }
+  97% { opacity: 1; }
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+/* ═══════════════════════════════════════════════════════════════════════════
+   ANIMATION UTILITY CLASSES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.animate-fadeIn { animation: fadeIn 0.6s ease-out forwards; }
+.animate-slideUp { animation: slideUp 0.6s ease-out forwards; }
+.animate-slideRight { animation: slideRight 0.5s ease-out forwards; }
+.animate-scaleUp { animation: scaleUp 0.5s ease-out forwards; }
+.animate-growUp { animation: growUp 0.8s ease-out forwards; }
+.animate-countUp { animation: countUp 0.8s ease-out forwards; }
+.animate-twinkle { animation: twinkle 3s ease-in-out infinite; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-dust-drift { animation: dustDrift 20s linear infinite; }
+.animate-atmosphere { animation: atmospherePulse 8s ease-in-out infinite; }
+.animate-solar-flare { animation: solarFlare 4s ease-in-out infinite; }
+.animate-data-flicker { animation: dataFlicker 5s ease-in-out infinite; }
+
+/* Animation delays */
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-1000 { animation-delay: 1000ms; }
+.animation-delay-2000 { animation-delay: 2000ms; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MARS GRADIENTS & BACKGROUNDS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Mars Surface Gradient */
+.bg-mars-surface {
+  background: linear-gradient(135deg, 
+    #0a0503 0%, 
+    #1a0a00 20%, 
+    #2d1810 40%, 
+    #3d1f15 60%, 
+    #1a0a00 80%, 
+    #0a0503 100%
+  );
 }
 
-/* 动画延迟 */
-.animation-delay-100 {
-  animation-delay: 100ms;
+/* Mars Atmosphere Gradient */
+.bg-mars-atmosphere {
+  background: linear-gradient(180deg,
+    var(--space-void) 0%,
+    #1C1008 30%,
+    #3D1F15 60%,
+    #8B4513 80%,
+    var(--mars-rust) 100%
+  );
 }
 
-.animation-delay-200 {
-  animation-delay: 200ms;
+/* Terraforming Glow */
+.bg-terraform-glow {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(45, 212, 191, 0.15) 0%,
+    transparent 70%
+  );
 }
 
-.animation-delay-300 {
-  animation-delay: 300ms;
+/* Achievement Gold Gradient */
+.bg-gold-gradient {
+  background: linear-gradient(135deg,
+    var(--gold-amber) 0%,
+    var(--gold-primary) 50%,
+    var(--gold-solar) 100%
+  );
 }
 
-.animation-delay-400 {
-  animation-delay: 400ms;
-}
-
-.animation-delay-500 {
-  animation-delay: 500ms;
-}
-
-/* 禁用选择 */
-.select-none {
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* 玻璃态效果 */
-.glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* 文字渐变 */
-.text-gradient {
-  background: linear-gradient(135deg, #f97316, #ec4899);
+/* Mars Text Gradient */
+.text-mars-gradient {
+  background: linear-gradient(135deg, 
+    var(--mars-terracotta) 0%, 
+    var(--mars-rust) 50%, 
+    var(--mars-copper) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* 卡片悬浮效果 */
-.card-hover {
+/* Terraform Text Gradient */
+.text-terraform-gradient {
+  background: linear-gradient(135deg, 
+    var(--terraform-cyan) 0%, 
+    var(--terraform-teal) 50%, 
+    var(--terraform-green) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, 
+    var(--gold-solar) 0%, 
+    var(--gold-primary) 50%, 
+    var(--gold-amber) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   GLASS & CARD EFFECTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.glass-mars {
+  background: rgba(193, 68, 14, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(193, 68, 14, 0.15);
+}
+
+.glass-dark {
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-terraform {
+  background: rgba(45, 212, 191, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(45, 212, 191, 0.15);
+}
+
+.card-mars {
+  background: linear-gradient(135deg, 
+    rgba(193, 68, 14, 0.1) 0%, 
+    rgba(139, 69, 19, 0.05) 100%
+  );
+  border: 1px solid rgba(193, 68, 14, 0.2);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.card-mars:hover {
+  border-color: rgba(193, 68, 14, 0.4);
+  box-shadow: 
+    0 8px 40px rgba(193, 68, 14, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BUTTON STYLES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.btn-mars {
+  background: linear-gradient(135deg, var(--mars-rust) 0%, var(--mars-oxide) 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 20px rgba(193, 68, 14, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+.btn-mars:hover {
+  background: linear-gradient(135deg, var(--mars-terracotta) 0%, var(--mars-rust) 100%);
+  box-shadow: 
+    0 6px 30px rgba(193, 68, 14, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
 
-/* 按钮点击效果 */
-.btn-press:active {
-  transform: scale(0.98);
+.btn-mars:active {
+  transform: translateY(0);
+  box-shadow: 
+    0 2px 15px rgba(193, 68, 14, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* 进度条动画 */
-.progress-bar {
+.btn-terraform {
+  background: linear-gradient(135deg, var(--terraform-teal) 0%, var(--terraform-cyan) 100%);
+  color: var(--space-void);
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(45, 212, 191, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-terraform:hover {
+  box-shadow: 0 6px 30px rgba(45, 212, 191, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   INPUT STYLES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.input-mars {
+  background: rgba(10, 10, 15, 0.6);
+  border: 1px solid rgba(193, 68, 14, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.input-mars::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.input-mars:focus {
+  outline: none;
+  border-color: var(--mars-rust);
+  box-shadow: 
+    0 0 0 3px rgba(193, 68, 14, 0.1),
+    0 0 20px rgba(193, 68, 14, 0.2);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   PROGRESS & DATA VISUALIZATION
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.progress-mars {
+  background: rgba(193, 68, 14, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-mars-bar {
+  background: linear-gradient(90deg, var(--mars-oxide) 0%, var(--mars-rust) 50%, var(--mars-terracotta) 100%);
+  height: 100%;
+  border-radius: 999px;
   transition: width 1s ease-out;
+  box-shadow: 0 0 10px rgba(193, 68, 14, 0.5);
 }
 
-/* 隐藏滚动条但保持滚动功能 */
+.stat-ring {
+  background: conic-gradient(
+    var(--mars-rust) var(--progress, 0%),
+    rgba(193, 68, 14, 0.1) var(--progress, 0%)
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   SPECIAL EFFECTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Scanline overlay effect */
+.scanline-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.1) 2px,
+    rgba(0, 0, 0, 0.1) 4px
+  );
+  z-index: 100;
+}
+
+/* CRT flicker effect */
+.crt-flicker {
+  animation: dataFlicker 5s ease-in-out infinite;
+}
+
+/* Glow effects */
+.glow-mars {
+  box-shadow: 0 0 40px rgba(193, 68, 14, 0.4);
+}
+
+.glow-terraform {
+  box-shadow: 0 0 40px rgba(45, 212, 191, 0.4);
+}
+
+.glow-gold {
+  box-shadow: 0 0 40px rgba(255, 184, 0, 0.4);
+}
+
+/* Text glow */
+.text-glow-mars {
+  text-shadow: 0 0 20px rgba(193, 68, 14, 0.5);
+}
+
+.text-glow-terraform {
+  text-shadow: 0 0 20px rgba(45, 212, 191, 0.5);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(255, 184, 0, 0.5);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   UTILITY CLASSES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.select-none {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -251,4 +656,32 @@ body {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* Touch optimization */
+.touch-action-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Focus visible styles */
+.focus-ring-mars:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(193, 68, 14, 0.4);
+}
+
+.focus-ring-terraform:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.4);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

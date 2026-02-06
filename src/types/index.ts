@@ -62,6 +62,18 @@ export interface IGlobalRankings {
   shortest_generations_top100: number | null;
   longest_generations_top100: number | null;
   max_score_top100: number | null;
+  trueskill_top200: number | null;
+}
+
+// 公司排名信息
+export interface ICorporationRanking {
+  corporation: string;
+  cn_name: string;
+  rank: number;
+  usage_count: number;
+  avg_score: number;
+  avg_position: number;
+  win_rate: number;
 }
 
 // 用户完整数据
@@ -69,7 +81,7 @@ export interface IUserData {
   metadata: IUserMetadata;
   player_stats: IPlayerStats;
   records_by_generation: Record<string, IGenerationRecord>;
-  top100_corporations: unknown[];
+  top100_corporations: ICorporationRanking[];
   time_stats: Record<string, unknown>;
   global_rankings: IGlobalRankings;
 }
@@ -108,7 +120,7 @@ export interface IReportSlideConfig {
   title: string;
   subtitle?: string;
   dataKey?: string;
-  template: 'welcome' | 'stats' | 'ranking' | 'highlight' | 'summary' | 'generation' | 'custom';
+  template: 'welcome' | 'stats' | 'ranking' | 'highlight' | 'summary' | 'generation' | 'radar' | 'corporation' | 'titles' | 'corp-titles' | 'trueskill' | 'ending' | 'custom';
   backgroundColor?: string;
   textColor?: string;
   // 模板变量，支持动态替换

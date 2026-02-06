@@ -134,7 +134,7 @@ export default async function GET(request: Request): Promise<NextResponse> {
     const contributionDays =
       userData.contributionsCollection.contributionCalendar.weeks
         .flatMap((week: any) => week.contributionDays)
-        .filter((day: any) => new Date(day.date) >= new Date("2024-01-01"));
+        .filter((day: any) => new Date(day.date) >= new Date("2025-01-01"));
 
     // Calculate monthly contribution statistics
     const monthlyCommits: Record<string, number> = {};

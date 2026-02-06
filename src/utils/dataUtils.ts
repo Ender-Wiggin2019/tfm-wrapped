@@ -12,43 +12,30 @@ import {
 export async function loadGameData(playerCount: TPlayerCount): Promise<IGameData> {
   const fileName = playerCount === 2 ? 'batch_user_aggregate_2p.json' : 'batch_user_aggregate_4p.json';
   const response = await fetch(`/data/${fileName}`);
-  
+
   if (!response.ok) {
     throw new Error(`Failed to load data: ${response.statusText}`);
   }
-  
+
   return response.json();
 }
 
 /**
- * 查找用户数据（支持模糊匹配）
+ * 查找用户数据（小写精确匹配）
  */
 export function findUser(
   gameData: IGameData,
   username: string
 ): IUserData | null {
   const normalizedUsername = username.toLowerCase().trim();
-  
-  // 精确匹配
-  if (gameData.users[username]) {
-    return gameData.users[username];
-  }
-  
-  // 不区分大小写匹配
+
+  // 转为小写后精确匹配
   for (const key of Object.keys(gameData.users)) {
     if (key.toLowerCase() === normalizedUsername) {
       return gameData.users[key];
     }
   }
-  
-  // 部分匹配
-  for (const key of Object.keys(gameData.users)) {
-    if (key.toLowerCase().includes(normalizedUsername) || 
-        normalizedUsername.includes(key.toLowerCase())) {
-      return gameData.users[key];
-    }
-  }
-  
+
   return null;
 }
 
@@ -61,7 +48,7 @@ export function processUserReport(
   playerCount: TPlayerCount
 ): IProcessedUserReport {
   const userData = findUser(gameData, username);
-  
+
   return {
     username: userData?.metadata.user_key || username,
     playerCount,
@@ -80,12 +67,12 @@ export function replaceTemplateVariables(
   variables: Record<string, string | number>
 ): string {
   let result = template;
-  
+
   for (const [key, value] of Object.entries(variables)) {
     const regex = new RegExp(`\\{\\{${key}\\}\\}`, 'g');
     result = result.replace(regex, String(value));
   }
-  
+
   return result;
 }
 
@@ -96,7 +83,7 @@ export function extractUserVariables(
   report: IProcessedUserReport
 ): Record<string, string | number> {
   const { userData, playerCount } = report;
-  
+
   if (!userData) {
     return {
       username: report.username,
@@ -113,10 +100,10 @@ export function extractUserVariables(
       mostPlayedGen: '-',
     };
   }
-  
+
   const stats = userData.player_stats;
   const generations = userData.records_by_generation;
-  
+
   // 找出最常玩的回合数
   let mostPlayedGen = '-';
   let maxGenGames = 0;
@@ -126,7 +113,7 @@ export function extractUserVariables(
       mostPlayedGen = gen;
     }
   }
-  
+
   return {
     username: userData.metadata.user_key,
     playerCount,
@@ -159,8 +146,8 @@ export function processSlideConfig(
   return {
     ...slide,
     title: replaceTemplateVariables(slide.title, variables),
-    subtitle: slide.subtitle 
-      ? replaceTemplateVariables(slide.subtitle, variables) 
+    subtitle: slide.subtitle
+      ? replaceTemplateVariables(slide.subtitle, variables)
       : undefined,
     variables: slide.variables
       ? Object.fromEntries(
@@ -195,17 +182,17 @@ export function getRankDescription(rank: number | null | string): string {
  */
 export function getWinRateEvaluation(winRate: number, playerCount: TPlayerCount): string {
   const avgWinRate = playerCount === 2 ? 50 : 25;
-  
+
   if (winRate >= avgWinRate * 2) {
-    return '🏆 传奇级别！';
+    return '火星女神的宠儿！';
   } else if (winRate >= avgWinRate * 1.5) {
-    return '⭐ 非常出色！';
+    return '实力派选手，让人羡慕！';
   } else if (winRate >= avgWinRate) {
-    return '👍 高于平均';
+    return '超过平均线，稳稳的幸福！';
   } else if (winRate >= avgWinRate * 0.5) {
-    return '💪 继续努力';
+    return '每一局都是宝贵的经验！';
   } else {
-    return '🌱 新手上路';
+    return '享受过程最重要~';
   }
 }
 
@@ -213,16 +200,18 @@ export function getWinRateEvaluation(winRate: number, playerCount: TPlayerCount)
  * 获取游戏场次评价
  */
 export function getGamesEvaluation(totalGames: number): string {
-  if (totalGames >= 100) {
-    return '🔥 资深火星改造者';
+  if (totalGames >= 200) {
+    return '等研究出火星移民技术后第一个就把你送上去 👑';
+  } else if (totalGames >= 100) {
+    return '火星资深居民，值得尊敬！';
   } else if (totalGames >= 50) {
-    return '🚀 火星常客';
+    return '火星签证已升级为永久居留';
   } else if (totalGames >= 20) {
-    return '⭐ 火星探索者';
+    return '火星上有你的专属停车位了';
   } else if (totalGames >= 10) {
-    return '🌟 火星新人';
+    return '欢迎加入火星移民大军';
   } else {
-    return '🌱 火星游客';
+    return '火星欢迎你，常来玩啊~';
   }
 }
 
@@ -233,7 +222,7 @@ export function getGenerationDistribution(
   userData: IUserData
 ): Array<{ generation: number; count: number; maxScore: number }> {
   const generations = userData.records_by_generation;
-  
+
   return Object.entries(generations)
     .map(([gen, data]) => ({
       generation: parseInt(gen),

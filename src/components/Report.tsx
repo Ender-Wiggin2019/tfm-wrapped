@@ -19,10 +19,26 @@ export default function Report({ report, onBack }: IReportProps) {
   // 提取模板变量
   const variables = extractUserVariables(report);
 
-  // 处理所有幻灯片配置
-  const processedSlides: IReportSlideConfig[] = reportSlides.map((slide) =>
-    processSlideConfig(slide, variables)
-  );
+  // 检查是否有公司称号（前100排名的公司）
+  const hasCorpTitles = report.userData?.top100_corporations?.some(c => c.rank <= 100) ?? false;
+  
+  // 检查是否有天梯排名
+  const hasTrueskillRank = report.userData?.global_rankings?.trueskill_top200 != null;
+
+  // 处理所有幻灯片配置，根据条件过滤
+  const processedSlides: IReportSlideConfig[] = reportSlides
+    .filter((slide) => {
+      // 如果没有公司称号，过滤掉 corp-titles 页面
+      if (slide.id === 'corp-titles' && !hasCorpTitles) {
+        return false;
+      }
+      // 如果没有天梯排名，过滤掉 trueskill 页面
+      if (slide.id === 'trueskill-rank' && !hasTrueskillRank) {
+        return false;
+      }
+      return true;
+    })
+    .map((slide) => processSlideConfig(slide, variables));
 
   const totalSlides = processedSlides.length;
 
@@ -130,13 +146,19 @@ export default function Report({ report, onBack }: IReportProps) {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-screen overflow-hidden bg-slate-900"
+      className="relative w-full h-screen overflow-hidden bg-mars-void touch-action-manipulation"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
+      {/* Global Mars Atmosphere */}
+      <div className="mars-atmosphere pointer-events-none" />
+      
+      {/* Terraform Grid */}
+      <div className="terraform-grid pointer-events-none" />
+
       {/* 幻灯片容器 */}
       <div
-        className="relative w-full h-full transition-transform duration-500 ease-out"
+        className="relative w-full h-full transition-transform duration-700 ease-out"
         style={{
           transform: `translateY(-${currentSlide * 100}%)`,
         }}
@@ -156,70 +178,118 @@ export default function Report({ report, onBack }: IReportProps) {
         ))}
       </div>
 
-      {/* 进度指示器 */}
+      {/* Mars-styled Progress Indicator */}
       <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 p-2 rounded-full glass-dark">
           {processedSlides.map((slide, index) => (
             <button
               key={slide.id}
               onClick={() => goToSlide(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
+              className={`relative w-2.5 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-mars-rust focus-visible:outline-none ${
                 index === currentSlide
-                  ? 'bg-white w-2 h-6'
-                  : 'bg-white/30 hover:bg-white/50'
+                  ? 'h-8 bg-gradient-to-b from-mars-terracotta to-mars-rust shadow-mars-glow'
+                  : 'h-2.5 bg-mars-rust/30 hover:bg-mars-rust/50'
               }`}
               aria-label={`跳转到第 ${index + 1} 页`}
-            />
+            >
+              {index === currentSlide && (
+                <span className="absolute inset-0 rounded-full animate-pulse-glow" />
+              )}
+            </button>
           ))}
         </div>
       </div>
 
-      {/* 顶部导航栏 */}
-      <div className="fixed top-0 left-0 right-0 z-50 p-4 flex justify-between items-center bg-gradient-to-b from-black/30 to-transparent">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          返回
-        </button>
-        <div className="text-white/50 text-sm">
-          {currentSlide + 1} / {totalSlides}
+      {/* Top Navigation Bar - Mars Colony HUD Style */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        {/* Top border glow */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-mars-rust/50 to-transparent" />
+        
+        <div className="p-4 flex justify-between items-center bg-gradient-to-b from-mars-void/90 to-transparent backdrop-blur-sm">
+          <button
+            onClick={onBack}
+            className="flex items-center gap-2 text-mars-dust/70 hover:text-mars-terracotta transition-colors font-display tracking-wide focus-visible:ring-2 focus-visible:ring-mars-rust focus-visible:outline-none rounded-lg px-2 py-1"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            <span className="hidden sm:inline">返回</span>
+          </button>
+          
+          {/* Mission Progress Indicator */}
+          <div className="flex items-center gap-4">
+            {/* Status indicator */}
+            <div className="hidden sm:flex items-center gap-2 text-xs text-mars-dust/50 font-mono">
+              <span className="w-1.5 h-1.5 rounded-full bg-mars-terraform animate-pulse" />
+              MISSION LOG
+            </div>
+            
+            {/* Page counter */}
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg glass-dark">
+              <span className="text-mars-terracotta font-display font-bold text-lg" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                {String(currentSlide + 1).padStart(2, '0')}
+              </span>
+              <span className="text-mars-dust/30">/</span>
+              <span className="text-mars-dust/50 font-mono text-sm" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                {String(totalSlides).padStart(2, '0')}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* 底部导航提示 */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex gap-4">
-        {currentSlide > 0 && (
-          <button
-            onClick={prevSlide}
-            className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full text-white/70 hover:text-white transition-all flex items-center gap-2"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
-            上一页
-          </button>
-        )}
-        {currentSlide < totalSlides - 1 && (
-          <button
-            onClick={nextSlide}
-            className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full text-white/70 hover:text-white transition-all flex items-center gap-2"
-          >
-            下一页
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
-        )}
+      {/* Bottom Navigation - Mars Control Panel Style */}
+      <div className="fixed bottom-0 left-0 right-0 z-50">
+        {/* Bottom border glow */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-mars-rust/30 to-transparent" />
+        
+        <div className="p-4 flex justify-center items-center gap-4 bg-gradient-to-t from-mars-void/90 to-transparent backdrop-blur-sm">
+          {currentSlide > 0 && (
+            <button
+              onClick={prevSlide}
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-xl glass-mars hover:bg-mars-rust/20 
+                text-mars-dust/70 hover:text-mars-terracotta transition-all duration-300 font-display tracking-wide
+                focus-visible:ring-2 focus-visible:ring-mars-rust focus-visible:outline-none"
+            >
+              <svg className="w-4 h-4 transition-transform group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              </svg>
+              <span className="hidden sm:inline">上一页</span>
+            </button>
+          )}
+          
+          {currentSlide < totalSlides - 1 && (
+            <button
+              onClick={nextSlide}
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-xl btn-mars font-display tracking-wide
+                focus-visible:ring-2 focus-visible:ring-mars-terracotta focus-visible:outline-none"
+            >
+              <span className="hidden sm:inline">下一页</span>
+              <svg className="w-4 h-4 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </button>
+          )}
+        </div>
       </div>
 
-      {/* 键盘提示 */}
-      <div className="fixed bottom-6 right-6 text-white/30 text-xs hidden md:block">
-        ↑↓ 或 滚轮切换页面 · ESC 返回
+      {/* Keyboard Hint - Tech Terminal Style */}
+      <div className="fixed bottom-20 right-6 hidden md:flex items-center gap-3 text-mars-dust/30 text-xs font-mono">
+        <div className="flex items-center gap-1">
+          <kbd className="px-1.5 py-0.5 rounded border border-mars-rust/20 bg-mars-void/50 text-mars-dust/50">↑</kbd>
+          <kbd className="px-1.5 py-0.5 rounded border border-mars-rust/20 bg-mars-void/50 text-mars-dust/50">↓</kbd>
+        </div>
+        <span>切换页面</span>
+        <span className="text-mars-rust/30">·</span>
+        <kbd className="px-1.5 py-0.5 rounded border border-mars-rust/20 bg-mars-void/50 text-mars-dust/50">ESC</kbd>
+        <span>返回</span>
       </div>
+
+      {/* Decorative corner elements */}
+      <div className="fixed top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-mars-rust/20 rounded-tl-lg pointer-events-none" />
+      <div className="fixed top-4 right-20 w-8 h-8 border-r-2 border-t-2 border-mars-rust/20 rounded-tr-lg pointer-events-none" />
+      <div className="fixed bottom-20 left-4 w-8 h-8 border-l-2 border-b-2 border-mars-rust/20 rounded-bl-lg pointer-events-none" />
+      <div className="fixed bottom-20 right-20 w-8 h-8 border-r-2 border-b-2 border-mars-rust/20 rounded-br-lg pointer-events-none" />
     </div>
   );
 }
